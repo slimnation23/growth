@@ -38,6 +38,9 @@
 
     &-content {
         padding: 0 65px;
+        &__logo {
+            display: none;
+        }
 
         h1 {
             font-size: 50px;
@@ -232,7 +235,7 @@
 
 @media (max-height: 830px) {
     .sign-content p {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         font-size: 1rem;
     }
     .sign-content h1 {
@@ -264,6 +267,19 @@
     }
     .sign {
         align-items: baseline;
+    }
+    .sign-content__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        width: 100%;
+        img {
+            width: 120px;
+        height: 50px;
+        }
+    }
+    .content__logo {
+        margin-top: 20px;
     }
 }
 
