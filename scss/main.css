@@ -1,7 +1,46 @@
-.sign-content {
-  min-height: 540px;
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
   background-color: #141414;
-  padding: 70px 67px 65px 70px;
+}
+
+.sign-photo {
+  position: relative;
+  background-image: url(/img/image01.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.sign-photo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.sign-photo__logo {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 115px;
+  z-index: 1254;
+}
+
+.sign-content {
+  padding: 0 65px;
 }
 
 .sign-content h1 {
@@ -248,8 +287,8 @@
   display: flex;
   padding-right: 8px;
   padding-left: 15px;
-  height: 23px;
-  border-radius: 11px;
+  height: 30px;
+  border-radius: 20px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#202020), to(#363636));
   background-image: linear-gradient(0deg, #202020 0%, #363636 100%);
   border: 1px solid #ea2f55;
