@@ -1,0 +1,21 @@
+.nav-menu {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &__left {
+        display: flex;
+        img {
+            margin-right: 18px;
+        }
+        &__search {
+            display: flex;
+            position: absolute;
+            background: linear-gradient(0deg, #202020 0%, #363636 100%);
+        }
+    }
+}
