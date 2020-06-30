@@ -228,11 +228,25 @@
 }
 
 .sign-content__button {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -45px;
 }
 
 .sign-content__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 98px;
   height: 23px;
   border-radius: 12px;
@@ -241,6 +255,10 @@
   font-size: 9px;
   color: #ea2f55;
   font-weight: 500;
+}
+
+.sign-content__button button img {
+  margin-right: 7px;
 }
 
 .sign-content__p {

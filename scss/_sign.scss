@@ -186,10 +186,14 @@
         }
 
         &__button {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-top: -45px;
 
             button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 98px;
                 height: 23px;
                 border-radius: 12px;
@@ -198,6 +202,9 @@
                 font-size: 9px;
                 color: #ea2f55;
                 font-weight: 500;
+                img {
+                    margin-right: 7px;
+                }
             }
         }
 
