@@ -7,15 +7,40 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
     &__left {
         display: flex;
+
         img {
             margin-right: 18px;
         }
-        &__search {
+
+        &-search {
             display: flex;
-            position: absolute;
-            background: linear-gradient(0deg, #202020 0%, #363636 100%);
+            padding-right: 8px;
+            padding-left: 15px;
+            height: 23px;
+            border-radius: 11px;
+            background-image: linear-gradient(0deg, #202020 0%, #363636 100%);
+            border: 1px solid #ea2f55;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ea2f55;
+               cursor: pointer;
+               i {
+                   
+               }
+            }
+            input {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 0;
+                color: #ffffff;
+                width: 285px;
+            }
         }
     }
 }
