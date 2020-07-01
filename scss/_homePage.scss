@@ -550,6 +550,9 @@
             margin-top: 110px;
         }
     }
+    .online-slider {
+        bottom: -420px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -563,16 +566,21 @@
 
     .nav-menu,
     .header,
-    .online, {
+    .online,
+    .online-slider,
+    .qualified {
         padding-left: 30px;
         padding-right: 30px;
-    }
-
-    .online-slider {
-        bottom: -390px;
     }
 
     .qualified {
         padding-top: 400px;
     }
 }
+
+@media (min-width: 421px) and (max-width: 600px) {
+    .online-slider {
+        bottom: -390px;
+    }
+}
+
