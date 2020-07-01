@@ -16,31 +16,127 @@
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-    <div class="nav-menu">
-        <div class="nav-menu__left">
-            <img src="img/logo.png" alt="logo">
-            <div class="nav-menu__left-search">
-                <input type="text" placeholder="Search">
-                <a href="#"><i class="fa fa-search fa-sm" aria-hidden="true"></i></a>
+    <header>
+        <div class="nav-menu">
+            <div class="nav-menu__left">
+                <img src="img/logo.png" alt="logo">
+                <div class="nav-menu__left-search">
+                    <input type="text" placeholder="Search">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <!-- /.nav-menu__left -->
+            <div class="nav-menu__right">
+                <ul id="menu">
+                    <li class="nav-menu__right-chart"><a href="#"><img src="img/chart.png" alt="chart"></a></li>
+                    <li class="nav-menu__right-alert"><a href="#"><img src="img/alert.png" alt="alert"></a></li>
+                    <li class="nav-menu__right-down" id="dropdown-btn">
+                        <a href="#">
+                            <img src="img/user.jpg" alt="user">
+                            <ul class="nav-menu__right-down__dropdown" id="dropdown-menu">
+                                <li>TEXT</li>
+                                <li>TEXT</li>
+                            </ul>
+                        </a>
+                        
+                    </li>
+                </ul>
+
+                <button id="menu-btn">
+                    <img src="img/menu-btn.png" alt="menu-btn">
+                </button>
+
+            </div>
+            <!-- /.nav-menu__right -->
+        </div>
+        <!-- /.nav-menu -->
+        <div class="header homepageBg">
+            <h2>No need to move any where</h2>
+            <h1>Grab the best courses from <br> one place</h1>
+            <div class="header__btn-group">
+                <button class="btn-pink">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <span>Lecture</span>
+                </button>
+                <button class="btn-dark">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span>My List</span>
+                </button>
             </div>
         </div>
-        <!-- /.nav-menu__left -->
-        <div class="nav-menu__right">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>
-                    <img src="1.png" alt="user">
-                        <ul class="dropdown">
-                            <li>1</li>
-                            <li>2</li>
-                        </ul>
-                </li>
-            </ul>
+        <!-- /.header -->
+    </header>
+
+    <main>
+        <div class="whats-hot">
+            <h2>What's <span>Hot</span></h2>
+            <div class="row whats-hot__books">
+                <div class="col-lg-2 col-md-3 col-sm-12 whats-hot__books__book">
+                    <img src="img/future-is-faster.jpg" alt="future">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 whats-hot__books__book">
+                    <img src="img/image-asset.jpg" alt="asset">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 whats-hot__books__book">
+                    <img src="img/thin-book-png-a-guide-to-getting-over-your-partner-s-past-and-finding-peace-1.jpg" alt="book">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 whats-hot__books__book">
+                    <img src="img/blank-ebook-cover-png-5.jpg" alt="ebook">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 whats-hot__books__book">
+                    <img src="img/E-book-design-examples-55.jpg" alt="book">
+                </div>
+            </div>
         </div>
-        <!-- /.nav-menu__right -->
-    </div>
-    <!-- /.nav-menu -->
+        <!-- /.whats-hot -->
+
+        <div class="online">
+            <h2>Best Online <span>Courses</span></h2>
+            <h5>We provides always our best educational services for our all students <br>
+                and always try to archieve our students trust and satisfaction 
+            </h5>
+            <button class="btn-pink">
+                <i class="fa fa-play" aria-hidden="true"></i>
+                <span>Lecture</span>
+            </button>
+        </div>
+
+        <div class="online-slider" id="online-slider">
+            <div class="online-slider__slide">
+                <div class="online-slider__slide-img">
+                    <a href="#"></a>
+                    <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+                </div>
+                <h4>The Art of Sketching: Transform Your Doodles into Art</h4>
+            </div>
+            <div class="online-slider__slide">
+                <div class="online-slider__slide-img">
+                    <a href="#"></a>
+                    <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+                </div>
+                <h4>The Art of Sketching: Transform Your Doodles into Art</h4>
+            </div>
+            <div class="online-slider__slide">
+                <div class="online-slider__slide-img">
+                    <a href="#"></a>
+                    <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+                </div>
+                <h4>The Art of Sketching: Transform Your Doodles into Art</h4>
+            </div>
+            <div class="online-slider__slide">
+                <div class="online-slider__slide-img">
+                    <a href="#"></a>
+                    <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+                </div>
+                <h4>The Art of Sketching: Transform Your Doodles into Art</h4>
+            </div>
+        </div>
+        <!-- online-slider -->
+        <!-- /.online -->
+        
+    </main>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
         crossorigin="anonymous">
