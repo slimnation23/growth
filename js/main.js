@@ -37,5 +37,19 @@ $("#history-slider").slick({
   slidesToScroll: 1,
   appendArrows: $('.history-video__controls'),
   prevArrow: '<a href="#"><i class="fas fa-arrow-left fa-2x"></i></a>',
-  nextArrow: '<a href="#"><i class="fas fa-arrow-right fa-2x"></i></a>'
+  nextArrow: '<a href="#"><i class="fas fa-arrow-right fa-2x"></i></a>',
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
