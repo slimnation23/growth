@@ -13,7 +13,7 @@
         align-items: center;
 
         img {
-            margin-right: 40px;
+            margin-right: 160px;
         }
 
         &-search {
@@ -133,7 +133,6 @@
     background-position-x: -100px;
     background-size: cover;
     position: relative;
-    
 }
 
 .header {
@@ -563,6 +562,9 @@
 }
 
 @media (max-width: 900px) {
+    .nav-menu__left img {
+        margin-right: 80px;
+    }
     #menu {
         display: none;
     }
