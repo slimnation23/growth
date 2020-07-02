@@ -1223,8 +1223,8 @@
 
 .history-card__add {
   position: absolute;
-  top: 240px;
-  left: 15px;
+  top: 235px;
+  left: 13px;
   z-index: 2389;
   display: -webkit-box;
   display: -ms-flexbox;
