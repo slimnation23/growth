@@ -1125,6 +1125,10 @@
 }
 
 @media (max-width: 600px) {
+  .nav-menu__left img,
+  .nav-menu__left-search {
+    margin-right: 15px;
+  }
   #menu.active {
     top: 69px;
     padding-right: 30px;
@@ -1137,8 +1141,8 @@
   .online,
   .online-slider,
   .qualified {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .qualified {
     padding-top: 400px;
