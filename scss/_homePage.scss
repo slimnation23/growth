@@ -127,7 +127,13 @@
 }
 
 .homepageBg {
-    background: #363636;
+    background: url(../img/homePageBg.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 80px;
+    background-position-x: -100px;
+    background-size: cover;
+    position: relative;
+    
 }
 
 .header {
@@ -139,6 +145,16 @@
     padding-left: 60px;
     padding-right: 60px;
     font-family: Arial, Helvetica, sans-serif;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: 2;
+    }
 
     h2 {
         font-size: 34px;
@@ -146,6 +162,7 @@
         color: #ffffff;
         margin-bottom: 30px;
         line-height: 1;
+        z-index: 1234;
     }
 
     h1 {
@@ -154,10 +171,12 @@
         font-weight: 800;
         margin-bottom: 30px;
         line-height: 1;
+        z-index: 1236;
     }
 
     &__btn-group {
         display: flex;
+        z-index: 2345;
 
         button {
             margin-right: 15px;
@@ -233,9 +252,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../img/1306.jpg);
+    background: url(../img/online.jpg);
     height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: 2;
+    }
 
     h2 {
         font-size: 60px;
@@ -244,6 +275,7 @@
         margin-bottom: 30px;
         line-height: 1;
         text-align: center;
+        z-index: 123;
 
         span {
             color: #ea2f55;
@@ -257,10 +289,12 @@
         font-size: 20px;
         font-weight: 300;
         margin-bottom: 30px;
+        z-index: 124;
     }
 
     button {
         width: 218px;
+        z-index: 125;
         height: 56px;
         border-radius: 4px;
         font-size: 22px;
@@ -283,9 +317,11 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     padding-bottom: 80px;
+    z-index: 2345;
 
     &__slide {
         max-width: 420px;
+        
 
         &-img {
             position: relative;
@@ -293,7 +329,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #1d9b38;
             margin-bottom: 20px;
 
             a {
@@ -301,8 +336,8 @@
                 width: 98px;
                 height: 98px;
                 border-radius: 50%;
-                background: #919191;
-                opacity: 0.1;
+                background: #000000;
+                opacity: 0.3;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -325,6 +360,30 @@
             opacity: 0.7;
         }
     }
+}
+
+.slide1 {
+    background-image: url(../img/slide1.jpg);
+    background-repeat: no-repeat;
+    height: 256px;
+}
+
+.slide2 {
+    background-image: url(../img/slide2.jpg);
+    background-repeat: no-repeat;
+    height: 256px;
+}
+
+.slide3 {
+    background-image: url(../img/slide3.jpg);
+    background-repeat: no-repeat;
+    height: 256px;
+}
+
+.slide4 {
+    background-image: url(../img/slide4.jpg);
+    background-repeat: no-repeat;
+    height: 256px;
 }
 
 .slick-slide {
@@ -496,7 +555,7 @@
     color: #ffffff;
     flex-direction: column;
     position: absolute;
-    top: 69px;
+    top: 59px;
     right: -79px;
     font-size: 20px;
     width: 170px;
@@ -518,6 +577,7 @@
 
     #dropdown-menu.drop-active {
         min-width: 150px;
+        top: 51px;
     }
 }
 

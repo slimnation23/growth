@@ -22,11 +22,20 @@ $("#online-slider").slick({
 });
 
 $("#qualified-slider").slick({
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2100,
-    variableWidth: true,
-    arrows: false,
-  });
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2100,
+  variableWidth: true,
+  arrows: false,
+});
+
+$("#history-slider").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  appendArrows: $('.history-video__controls'),
+  prevArrow: '<a href="#"><i class="fas fa-arrow-left fa-2x"></i></a>',
+  nextArrow: '<a href="#"><i class="fas fa-arrow-right fa-2x"></i></a>'
+});
