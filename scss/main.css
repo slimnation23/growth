@@ -685,10 +685,12 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .whats-hot__books__book {
-  padding: 30px;
+  padding: 20px;
   border-radius: 16px;
   border: 2px solid #707070;
   display: -webkit-box;
@@ -702,6 +704,7 @@
           align-items: center;
   margin-right: 40px;
   margin-bottom: 40px;
+  min-width: 226px;
   min-height: 256px;
 }
 
@@ -873,7 +876,7 @@
 }
 
 .slick-slide {
-  margin-right: 12px;
+  margin-right: 40px;
   outline: none;
 }
 
@@ -1333,8 +1336,8 @@
 }
 
 .history-card img {
-  min-height: 300px;
-  border-radius: 5px;
+  max-height: 300px;
+  border-radius: 10px;
   -webkit-filter: drop-shadow(-9.192px 9.192px 3.5px rgba(0, 0, 0, 0.27));
           filter: drop-shadow(-9.192px 9.192px 3.5px rgba(0, 0, 0, 0.27));
   background-color: #000000;
@@ -1456,8 +1459,8 @@
 
 .history-slider__add {
   position: absolute;
-  top: 240px;
-  left: 15px;
+  top: 235px;
+  left: 13px;
   z-index: 2389;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1603,9 +1606,17 @@
   }
 }
 
+@media (max-width: 830px) {
+  .history {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+  }
+}
+
 @media (max-width: 600px) {
-  .history-bg {
-    margin-top: 70px;
+  .view {
+    padding-top: 70px;
   }
 }
 

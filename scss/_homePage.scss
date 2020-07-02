@@ -224,9 +224,10 @@
     &__books {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         &__book {
-            padding: 30px;
+            padding: 20px;
             border-radius: 16px;
             border: 2px solid #707070;
             display: flex;
@@ -235,7 +236,7 @@
             margin-right: 40px;
             margin-bottom: 40px;
 
-            // min-width: 226px;
+            min-width: 226px;
             min-height: 256px;
 
             img {
@@ -386,7 +387,7 @@
 }
 
 .slick-slide {
-    margin-right: 12px;
+    margin-right: 40px;
     outline: none;
 }
 
