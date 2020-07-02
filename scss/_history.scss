@@ -17,6 +17,7 @@
         margin-bottom: 50px;
         position: relative;
         z-index: 4;
+        max-width: 260px;
 
         &__content {
             display: flex;
@@ -87,7 +88,7 @@
         }
 
         img {
-
+            min-height: 300px;
             border-radius: 5px;
             filter: drop-shadow(-9.192px 9.192px 3.5px rgba(0, 0, 0, 0.27));
             background-color: #000000;
@@ -263,5 +264,13 @@
     margin-right: 50px;
     &:last-child {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .history {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
