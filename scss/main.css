@@ -880,6 +880,42 @@
   outline: none;
 }
 
+.video1 {
+  background-image: url(../img/video1.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
+.video2 {
+  background-image: url(../img/video2.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
+.video3 {
+  background-image: url(../img/video3.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
+.video4 {
+  background-image: url(../img/video4.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
+.video5 {
+  background-image: url(../img/video5.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
+.video6 {
+  background-image: url(../img/video6.jpg);
+  background-repeat: no-repeat;
+  height: 256px;
+}
+
 .qualified {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #141414;
@@ -1101,7 +1137,6 @@
   }
   #dropdown-menu.drop-active {
     min-width: 150px;
-    top: 51px;
   }
 }
 
@@ -1191,6 +1226,16 @@
   width: 100%;
 }
 
+.text-left {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding-bottom: 80px !important;
+}
+
 .history {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1223,8 +1268,8 @@
 
 .history-card__add {
   position: absolute;
-  top: 235px;
-  left: 13px;
+  top: 240px;
+  left: 15px;
   z-index: 2389;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1270,6 +1315,13 @@
   background-color: #000000;
   border: 2px solid #707070;
   width: 25%;
+  margin-bottom: 40px;
+}
+
+.history-card__content__shortLine {
+  background-color: #000000;
+  border: 2px solid #707070;
+  width: 12%;
   margin-bottom: 40px;
 }
 
@@ -1594,6 +1646,207 @@
   margin-right: 0;
 }
 
+.my-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.my-task__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  min-width: 228px;
+}
+
+.my-task__item img {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.my-task__item h3 {
+  font-size: 28px;
+  line-height: 1;
+  color: #d2d2d2;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.my-task__item span {
+  font-size: 28px;
+  line-height: 1;
+  color: #ea2f55;
+  font-weight: 500;
+}
+
+.my-task__line {
+  width: 2px;
+  height: 400px;
+  background-color: #707070;
+  margin-right: 20px;
+}
+
+@media (max-width: 1459px) {
+  .my-task {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .my-task__item {
+    margin-bottom: 0;
+  }
+  .my-task__line {
+    width: 100%;
+    max-width: 228px;
+    height: 2px;
+    margin-bottom: 45px;
+  }
+}
+
+.invite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.invite__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.invite__buttons button {
+  border: none;
+  outline: none;
+  padding: 20px 30px;
+  max-width: 212px;
+  border-radius: 6px;
+  background-color: #ea2f55;
+  font-size: 22px;
+  color: #d2d2d2;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.invite__buttons button:first-child {
+  margin-right: 30px;
+}
+
+.invite-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.invite-info h3 {
+  font-size: 22px;
+  line-height: 1;
+  color: #d2d2d2;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.invite-info a {
+  font-size: 22px;
+  color: #747474;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.invite-info__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invite-info__social i {
+  margin-right: 20px;
+  color: #ea2f55;
+}
+
+.invite-first {
+  margin-right: 50px;
+}
+
+.grey-line {
+  width: 100%;
+  background-color: #6a6a6a;
+  height: 2px;
+  margin-top: -60px;
+  margin-bottom: 56px;
+}
+
+@media (min-width: 820px) and (max-width: 1459px) {
+  .my-task__line {
+    display: none;
+  }
+  .my-task__item {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-left,
+  .invite {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+  }
+  .invite-first {
+    margin-right: 0;
+  }
+  .history-card__content__shortLine {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 785px) {
+  .invite-info a {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1200px) {
   .history-video {
     -webkit-box-pack: center;
@@ -1611,12 +1864,26 @@
     margin-left: 0;
     margin-right: 0;
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 @media (max-width: 600px) {
+  .invite-info a {
+    font-size: 10px;
+  }
   .view {
     padding-top: 70px;
+  }
+  .invite__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .invite__buttons button:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
