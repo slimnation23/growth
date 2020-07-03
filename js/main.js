@@ -53,3 +53,11 @@ $("#history-slider").slick({
     }
   ]
 });
+
+$(".info-line-a").click(function(e) {
+  $(".info-line-a").removeClass('info-line-a__active');
+  $(this).addClass('info-line-a__active');
+
+  $('.block').removeClass('block-active');
+  $($(this).attr('data-class')).addClass('block-active');
+})

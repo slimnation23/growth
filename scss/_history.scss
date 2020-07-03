@@ -625,6 +625,15 @@
 // Special Offers
 
 // Growth Mindset
+.purchase {
+    margin-top: 60px !important;
+    width: 67% !important;
+    justify-content: flex-start !important;
+    margin-right: 50px;
+    &-block {
+        justify-content: flex-start !important;
+    }
+}
 .info-line {
     margin-top: -80px;
     margin-bottom: 50px;
@@ -639,21 +648,22 @@
 
         li {
             margin-right: 70px;
+            cursor: pointer;
 
             &:last-child {
                 margin-right: 0;
-            }
-
-            a {
-                font-size: 24px;
-                color: #747474;
-                font-weight: 400;
             }
         }
     }
 }
 
-.info-line__active {
+.info-line-a {
+    font-size: 24px;
+    color: #747474;
+    font-weight: 400;
+}
+
+.info-line-a__active {
     color: #ea2f55 !important;
     position: relative;
 
@@ -663,11 +673,18 @@
         display: block;
         height: 10px;
         background-color: #ea2f55;
-        width: 150px;
-        bottom: -26px;
-        left: -50%;
-        margin-left: 5px;
+        width: 150%;
+        bottom: -25px;
+        left: -25%;
     }
+}
+
+.block {
+    display: none;
+}
+
+.block.block-active {
+    display: flex;
 }
 
 // Growth Mindset
@@ -679,6 +696,21 @@
 
     .my-task__item {
         margin-right: 40px;
+    }
+}
+
+@media (max-width: 1285px) {
+    .purchase {
+        width: 100% !important;
+        margin-right: 0;
+    }
+    .purchase ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .purchase ul li {
+        margin-right: 0;
     }
 }
 
@@ -723,9 +755,29 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .my-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 @media (max-width: 600px) {
+    .info-line {
+        justify-content: flex-start;
+    }
+    .purchase ul,
+    .info-line ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .info-line ul li {
+        margin-bottom: 25px;
+    }
+    .info-line-a__active::after {
+        bottom: -15px;
+        width: 20%;
+        left: 0;
+    }
     .offers img {
         width: 100%;
         height: auto;
