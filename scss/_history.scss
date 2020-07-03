@@ -622,6 +622,56 @@
     }
 }
 
+// Special Offers
+
+// Growth Mindset
+.info-line {
+    margin-top: -80px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-bottom: 10px solid #2b2b2b;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        padding-bottom: 15px;
+
+        li {
+            margin-right: 70px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 24px;
+                color: #747474;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.info-line__active {
+    color: #ea2f55 !important;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 10px;
+        background-color: #ea2f55;
+        width: 150px;
+        bottom: -26px;
+        left: -50%;
+        margin-left: 5px;
+    }
+}
+
+// Growth Mindset
+
 @media (min-width: 820px) and (max-width: 1459px) {
     .my-task__line {
         display: none;
@@ -680,6 +730,7 @@
         width: 100%;
         height: auto;
     }
+
     .history-card {
         margin-right: 0;
     }
