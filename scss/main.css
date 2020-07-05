@@ -2694,6 +2694,21 @@
   margin-top: -163px;
 }
 
+.descritpion-left__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.descritpion-left__img img {
+  max-width: 173px;
+  text-align: center;
+}
+
 .descritpion-left__h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2983,7 +2998,10 @@
   .comments-comment__content p,
   .comments h2,
   .comments h1,
-  .comments-rang {
+  .comments-rang,
+  .descritpion-left h2,
+  .descritpion-left h3,
+  .descritpion-left ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

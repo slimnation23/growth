@@ -7,6 +7,15 @@
     border: 1px solid #414141;
     position: relative;
     margin-top: -163px;
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        img {
+            max-width: 173px;
+            text-align: center;
+        }
+    }
     &__h1 {
         display: flex;
         align-items: baseline;
@@ -209,7 +218,7 @@
     .comments-btn {
         justify-content: center;
     }
-    .comments-comment, {
+    .comments-comment {
         flex-direction: column;
         align-items: center;
     }
@@ -218,7 +227,10 @@
     .comments-comment__content p,
     .comments h2,
     .comments h1,
-    .comments-rang {
+    .comments-rang,
+    .descritpion-left h2,
+    .descritpion-left h3,
+    .descritpion-left ul {
         justify-content: center;
         text-align: center;
     }
