@@ -1336,7 +1336,7 @@
 }
 
 .history-card__content h5 {
-  font-size: 18px;
+  font-size: 20px;
   color: #707070;
   margin-bottom: 50px;
 }
@@ -2306,6 +2306,37 @@
   display: none;
 }
 
+.upload-productLine {
+  background-color: #2B2B2B;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 50px;
+}
+
+.upload-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 70px;
+}
+
+.upload-btn button {
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #EA2F55;
+  border: none;
+  min-width: 266px;
+  height: 49px;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+}
+
 @media (max-width: 1199px) {
   .padding-0 {
     padding-left: 0 !important;
@@ -2322,6 +2353,11 @@
   .upload-right__input {
     width: 96%;
   }
+  .upload-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2336,6 +2372,239 @@
   .upload-right textarea,
   .upload-right__input {
     width: 94%;
+  }
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.margin-top {
+  margin-top: -30px;
+}
+
+.padding-bottom {
+  padding-bottom: 0;
+}
+
+.leftBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+  background-color: #1e1e1e;
+  color: #747474;
+}
+
+.leftBlock-img {
+  padding: 15px;
+  background-color: #141414;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.leftBlock-img img {
+  height: 81px;
+}
+
+.leftBlock-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.leftBlock-text h3 {
+  font-size: 18px;
+  margin-bottom: 9px;
+  line-height: 1.4;
+}
+
+.leftBlock-text p {
+  font-size: 16px;
+}
+
+.leftBlock-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.leftBlock-btn button {
+  outline: none;
+  cursor: pointer;
+  min-width: 87px;
+  height: 36px;
+  background-color: #141414;
+  color: #747474;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.leftBlock-btn span {
+  font-size: 1;
+  color: #EA2F55;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.leftBlock h2 {
+  font-size: 18px;
+  margin-top: 18px;
+  margin-right: 15px;
+}
+
+.leftBlock i {
+  color: #EA2F55;
+  margin-top: 18px;
+}
+
+.rightBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #414141;
+  border-radius: 10px;
+  padding: 40px 30px 30px 30px;
+  color: #D2D2D2;
+}
+
+.rightBlock h1 {
+  line-height: 1;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.rightBlock-line {
+  width: 100%;
+  height: 2px;
+  background-color: #707070;
+  margin-bottom: 30px;
+}
+
+.rightBlock-paypal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.rightBlock-paypal img {
+  max-width: 100%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.rightBlock h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.rightBlock-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.rightBlock-text__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 23px;
+  font-size: 16px;
+}
+
+.rightBlock-text__content p {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.rightBlock-text__content span {
+  font-weight: 300;
+}
+
+.rightBlock-text__toPay {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 2px solid #707070;
+  border-bottom: 2px solid #707070;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.rightBlock button {
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #EA2F55;
+  color: #ffffff;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  min-height: 60px;
+}
+
+@media (max-width: 600px) {
+  .leftBlock {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
