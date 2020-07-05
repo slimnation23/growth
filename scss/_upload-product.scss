@@ -12,6 +12,9 @@
         background-color: #262626;
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
         border: 2px solid #474747;
+        &:hover {
+            opacity: 0.7;
+        }
     }
     h1 {
         font-size: 30px;
@@ -39,6 +42,9 @@
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
         border: 2px solid #474747;
         margin-bottom: 23px;
+        &:hover {
+            opacity: 0.7;
+        }
         div {
             font-size: 1rem;
         }
@@ -62,6 +68,9 @@
         background-color: #262626;
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
         border: 2px solid #474747;
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__group {
         display: flex;
@@ -94,6 +103,9 @@
             background-color: #262626;
             filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
             border: 2px solid #474747;
+            &:hover {
+                opacity: 0.7;
+            }
         }
         &-btn {
             display: flex;
@@ -106,6 +118,9 @@
             filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
             background-color: #305DA8;
             color: #ffffff;
+            &:hover {
+                opacity: 0.7;
+            }
         }
         button {
             outline: none;
@@ -115,6 +130,9 @@
             border-radius: 50%;
             border: 2px solid #EA2F55;
             background-color: transparent;
+            &:hover {
+                opacity: 0.7;
+            }
             i {
                 color: #EA2F55;
                 vertical-align: middle;
@@ -135,6 +153,9 @@
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
         border: 2px solid #474747;
         margin-left: 15px;
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__input {
         width: 100%;
@@ -150,6 +171,9 @@
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
         border: 2px solid #474747;
         margin-left: 15px;
+        &:hover {
+                opacity: 0.7;
+            }
     }
 }
 
@@ -183,6 +207,9 @@
         height: 49px;
         border-radius: 10px;
         filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
