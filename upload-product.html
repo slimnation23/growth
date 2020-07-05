@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload NE Product</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap-grid CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <div class="nav-menu">
+        <div class="nav-menu__left">
+            <img src="img/logo.png" alt="logo">
+            <div class="nav-menu__left-search">
+                <input type="text" placeholder="Search">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <!-- /.nav-menu__left -->
+        <div class="nav-menu__right">
+            <ul id="menu">
+                <li class="nav-menu__right-chart"><a href="#"><img src="img/chart.png" alt="chart"></a></li>
+                <li class="nav-menu__right-alert"><a href="#"><img src="img/alert.png" alt="alert"></a></li>
+                <li class="nav-menu__right-down" id="dropdown-btn">
+                    <div>
+                        <img src="img/userimg.png" alt="user">
+                        <ul class="nav-menu__right-down__dropdown" id="dropdown-menu">
+                            <li>TEXT</li>
+                            <li>TEXT</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+            </ul>
+
+            <button id="menu-btn">
+                <img src="img/menu-btn.png" alt="menu-btn">
+            </button>
+
+        </div>
+        <!-- /.nav-menu__right -->
+    </div>
+    <!-- /.nav-menu -->
+
+    <div class="view view-second">
+        <img src="img/uploadProductBg.jpg" alt="Wishlist">
+        <div class="mask"></div>
+    </div>
+    <!-- view view-second -->
+
+    <div class="history text-left">
+        <div class="history-firstBlock">
+            <div class="history-card__content">
+                <div class="history-card__content__shortLine"></div>
+                <h3>Upload NE Product</h3>
+                <h5>Your best tutorials I one click</h5>
+            </div>
+        </div>
+    </div>
+    <!-- history -->
+
+    <div class="my-container">
+
+        <div class="info-line">
+            <ul>
+                <li class="info-line-a info-line-a__active" data-class=".block-regular">Regular</li>
+                <li class="info-line-a" data-class=".block-promo">Promo</li>
+            </ul>
+        </div>
+
+        <div class="history-slider row block block-regular block-active">
+            <div class="row ml-0 justify-content-between w-100">
+                <div class="col-xl-6 col-sm-12">
+                    <div class="upload-left">
+                        <div class="upload-left__file">
+                            <label><input type="file" name="file" id="fl_inp">Thumbnail</label>
+                            <div id="fl_nm">File not selected</div>
+                        </div>
+                        <input type="text" placeholder="Geo blocking">
+                        <input type="text" placeholder="Age Restriction">
+                        <input type="text" placeholder="Tags">
+                        <div class="upload-left__group">
+                            <input type="text" placeholder="Local Member">
+                            <input type="text" placeholder="International Member">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-sm-12 padding-0">
+                    <div class="upload-right">
+                        <div class="upload-right__group">
+                            <div class="col-xl-8 col-md-8 col-sm-7">
+                                <input type="text" placeholder="Topic Name">
+                            </div>
+                            <div class="col-xl-3 col-md-3 col-sm-3">
+                                <div class="upload-right__group-btn">Video</div>
+                            </div>
+                            <div class="col-xl-1 col-md-1 col-sm-2">
+                                <button><i class="fas fa-plus fa-lg"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="upload-right__group">
+                            <div class="col-xl-8 col-md-8 col-sm-7">
+                                <input type="text" placeholder="Topic Name">
+                            </div>
+                            <div class="col-xl-3 col-md-3 col-sm-3">
+                                <div class="upload-right__group-btn">E-Book</div>
+                            </div>
+                            <div class="col-xl-1 col-md-1 col-sm-2">
+                                <button><i class="fas fa-plus fa-lg"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="upload-right__group">
+                            <div class="col-xl-8 col-md-8 col-sm-7">
+                                <input type="text" placeholder="Topic Name">
+                            </div>
+                            <div class="col-xl-3 col-md-3 col-sm-3">
+                                <div class="upload-right__group-btn">Audio</div>
+                            </div>
+                            <div class="col-xl-1 col-md-1 col-sm-2">
+                                <button><i class="fas fa-plus fa-lg"></i></button>
+                            </div>
+                        </div>
+
+                        <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+
+                        <input class="upload-right__input" type="text" placeholder="Product Name">
+
+                        <input class="upload-right__input" type="text" placeholder="Category">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-slider row block block-promo">
+            <div class="row ml-0 justify-content-between w-100">
+                <div class="col-xl-6 col-sm-12">
+                    <div class="upload-left">
+                        <div class="upload-left__file">
+                            <label><input type="file" name="file" id="fl_inp">Thumbnail</label>
+                            <div id="fl_nm">File not selected</div>
+                        </div>
+                        <input type="text" placeholder="Geo blocking">
+                        <input type="text" placeholder="Age Restriction">
+                        <input type="text" placeholder="Tags">
+                        <div class="upload-left__group">
+                            <input type="text" placeholder="Local Member">
+                            <input type="text" placeholder="International Member">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.my-container -->
+
+   
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+        crossorigin="anonymous">
+</script>
+<script src="slick/slick.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

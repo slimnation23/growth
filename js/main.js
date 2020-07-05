@@ -60,4 +60,9 @@ $(".info-line-a").click(function(e) {
 
   $('.block').removeClass('block-active');
   $($(this).attr('data-class')).addClass('block-active');
-})
+});
+
+$("#fl_inp").change(function(){
+      var filename = $(this).val().replace(/.*\\/, "");
+      $("#fl_nm").html(filename);
+});
