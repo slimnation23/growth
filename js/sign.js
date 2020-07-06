@@ -48,27 +48,37 @@
 
 
 $("#getstarted").click(function() {
-    $('#signStart').hide();
+    $('#signStart').animate({
+        width: "toggle"
+    });
     $('#signIn').show();
 });
 
 $('#forgotPass').click(function() {
-    $('#forgotBlock').show();
+    $('#forgotBlock').animate({
+        width: "toggle"
+    });
     $('#signIn').hide();
 });
 
 $('#backLogin').click(function() {
-    $('#signIn').show();
+    $('#signIn').animate({
+        width: "toggle"
+    });
     $('#forgotBlock').hide();
 });
 
 $('#signUp').click(function() {
-    $('#signBlock').show();
+    $('#signBlock').animate({
+        width: "toggle"
+    });
     $('#signIn').hide();
 });
 
 $('#signInBtn').click(function() {
-    $('#signIn').show();
+    $('#signIn').animate({
+        width: "toggle"
+    });
     $('#signBlock').hide();
 });
 

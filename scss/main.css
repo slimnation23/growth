@@ -443,6 +443,7 @@
     font-size: 1;
     color: #ea2f55;
     cursor: pointer;
+    font-weight: 500;
   }
   .sign-content__top a:active {
     opacity: 0.7;
