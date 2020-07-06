@@ -16,9 +16,14 @@
   position: relative;
   background-image: url(../img/image01.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+
+.sign-photo__mobile {
+  display: none;
 }
 
 .sign-photo::after {
@@ -46,6 +51,14 @@
 
 .sign-content {
   padding: 0 65px;
+}
+
+.sign-content__top {
+  display: none;
+}
+
+.sign-content__top img {
+  width: 100px;
 }
 
 .sign-content__logo {
@@ -82,6 +95,10 @@
   font-weight: 500;
   text-align: right;
   margin-top: -10px;
+}
+
+.sign-content__a-none {
+  display: none;
 }
 
 .sign-content__a:hover {
@@ -231,7 +248,7 @@
           filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
   background-color: #141414;
   border: 1px solid #ea2f55;
-  font-size: 19px;
+  font-size: 15px;
   color: #d2d2d2;
   font-weight: 400;
   display: -webkit-box;
@@ -297,6 +314,19 @@
   opacity: 0.7;
 }
 
+.forgPass,
+.signBlock {
+  display: none;
+}
+
+.sign-content__a-none {
+  display: block;
+}
+
+#forgotPass {
+  display: none;
+}
+
 @media (max-height: 830px) {
   .sign-content p {
     margin-bottom: 20px;
@@ -326,30 +356,100 @@
 }
 
 @media (max-width: 767px) {
-  .sign-photo {
+  #forgotPass {
+    display: block;
+  }
+  .sign-content__a-none,
+  .sign-content__p {
+    display: none;
+  }
+  .sign-photo__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 15px;
+  }
+  .sign-photo__mobile img {
+    margin-bottom: 10px;
+    z-index: 2389;
+  }
+  .sign-photo__mobile h1 {
+    color: #ffffff;
+    font-size: 28px;
+    text-transform: uppercase;
+    z-index: 2569;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+  .sign-photo__mobile p {
+    color: #ffffffa4;
+    margin-bottom: 40px;
+    z-index: 2458;
+  }
+  .sign-photo__mobile button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #ea2f55;
+    height: 38px;
+    width: 100%;
+    z-index: 2657;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .sign-photo__mobile button:active {
+    opacity: 0.7;
+  }
+  .sign-none {
+    display: none;
+  }
+  .content-none,
+  .sign-photo__logo {
     display: none;
   }
   .sign {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-  .sign-content__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  .sign-content__logo img {
-    width: 120px;
-    height: 50px;
+    height: 100%;
   }
   .content__logo {
     margin-top: 20px;
+  }
+  .sign-content__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .sign-content__top a {
+    font-size: 1;
+    color: #ea2f55;
+    cursor: pointer;
+  }
+  .sign-content__top a:active {
+    opacity: 0.7;
+  }
+  .sign-content__top a i {
+    color: #ea2f55;
+    margin-left: 5px;
   }
 }
 
@@ -360,15 +460,14 @@
   }
 }
 
-@media (min-height: 435px) and (max-height: 825px) {
-  .sign {
-    height: 100vh;
-  }
-}
-
 @media (min-height: 350px) and (max-height: 825px) {
-  .sign-mobile {
-    height: 100vh;
+  .sign-content {
+    padding: 0px 15px;
+  }
+  .sign {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -416,6 +515,12 @@
   }
   .sign-content__checkbox {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sign-content__line-content {
+    left: 47%;
   }
 }
 

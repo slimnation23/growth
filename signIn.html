@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap-grid CSS -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -13,13 +15,23 @@
 <body>
     <div class="row m-0 sign">
         <div class="col-md-6 col-sm-12 p-0">
-            <div class="sign-photo">
+            <div class="sign-photo" id="signStart">
                 <img src="img/whitelogo.png" alt="whitelogo" class="sign-photo__logo">
+                <div class="sign-photo__mobile">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                    <h1>Welcome</h1>
+                    <p>Grab the best cources from one place</p>
+                    <button id="getstarted">Get Started</button>
+                </div>
             </div>
         </div>
         <!-- /.col-md-6 col-sm-12 -->
         <div class="col-md-6 col-sm-12 p-0">
-            <div class="sign-content">
+            <div class="sign-content content-none" id="signIn">
+                <div class="sign-content__top">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                    <a href="#" id="signUp">Sign Up<i class="fas fa-arrow-right fa-sm"></i></a>
+                </div>
                 <div class="sign-content__logo content__logo">
                     <img src="img/whitelogo.png" alt="whitelogo">
                 </div>
@@ -29,7 +41,8 @@
                 <form action="#" method="post">
                     <input class="sign-content__input" type="text" placeholder="Username">
                     <input class="sign-content__input" type="password" placeholder="Password">
-                    <a href="#" class="sign-content__a">Forgot Password?</a>
+                    <a href="forgotPassword.html" class="sign-content__a sign-content__a-none">Forgot Password?</a>
+                    <a href="#" class="sign-content__a" id="forgotPass">Forgot Password?</a>
                     <button type="submit">Login</button>
                     <div class="sign-content__checkbox">
                         <input type="checkbox" class="sign-content__checkbox-input" id="checkbox">
@@ -55,8 +68,78 @@
             <!-- /.signContent -->
         </div>
         <!-- /.col-md-6 col-sm-12 -->
+
+        <div class="col-md-6 col-sm-12 p-0">
+            <div class="sign-content forgPass" id="forgotBlock">
+                <div class="sign-content__top">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                </div>
+                
+                <div class="sign-content__logo">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                </div>
+                <h1>Forgot Password</h1>
+                <p>Don't worry about the password we will recover to you</p>
+
+                <form action="#" method="post">
+                    <input class="sign-content__input" type="text" placeholder="User Name / Email id">
+                    <a href="#" class="sign-content__a" id="backLogin">Back to login</a>
+                    <button type="submit">Recover Password</button>
+                </form>
+
+            </div>
+        </div>
+        <!-- /.signContent -->
+
+
+        <div class="col-md-6 col-sm-12 p-0">
+            <div class="sign-content signBlock" id="signBlock">
+                <div class="sign-content__top">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                    <a href="#" id="signInBtn">Sign In <i class="fas fa-arrow-right fa-sm"></i></a>
+                </div>
+                <div class="sign-content__logo content__logo">
+                    <img src="img/whitelogo.png" alt="whitelogo">
+                </div>
+                <h1>Sign Up</h1>
+                <p>Create your account to get the moments updates on the things that interest you</p>
+
+                <form action="#" method="post">
+                    <input class="sign-content__input" type="text" placeholder="Name">
+                    <input class="sign-content__input" type="password" placeholder="Password">
+                    <input class="sign-content__input" type="email" placeholder="Email Address">
+                    <button type="submit">Create Account</button>
+                    <div class="sign-content__checkbox">
+                        <input type="checkbox" class="sign-content__checkbox-input" id="checkbox">
+                        <label class="sign-content__checkbox-label" for="checkbox">
+                            I agree to the business name's <span><a href="#">Terms of Services</a></span> and <span><a href="#">Privacy</a></span> 
+                        </label>
+                    </div>
+                </form>
+
+                <div class="sign-content__line">
+                    <div class="sign-content__line-content">or</div>
+                </div>
+
+                <div class="sign-content__button">
+                    <button type="submit">
+                        <img src="img/seo-and-web.png" alt="google">
+                        Google
+                    </button>
+                </div>
+
+                <p class="sign-content__p">I already have and account ? <span><a href="#">Sign In</a></span></p>
+            </div>
+            <!-- /.signContent -->
+        </div>
+        <!-- /.col-md-6 col-sm-12 -->
     </div>
     <!-- /.row -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="js/sign.js"></script>
 
 </body>
 </html>

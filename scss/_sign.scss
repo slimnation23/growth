@@ -9,9 +9,13 @@
         position: relative;
         background-image: url(../img/image01.jpg);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         width: 100%;
         height: 100vh;
+        &__mobile {
+            display: none;
+        }
 
         &::after {
             content: '';
@@ -30,6 +34,7 @@
             left: 30px;
             z-index: 1254;
         }
+
         img {
             width: 221px;
             height: 100px;
@@ -38,6 +43,15 @@
 
     &-content {
         padding: 0 65px;
+
+        &__top {
+            display: none;
+
+            img {
+                width: 100px;
+            }
+        }
+
         &__logo {
             display: none;
         }
@@ -67,6 +81,10 @@
             font-weight: 500;
             text-align: right;
             margin-top: -10px;
+            &-none {
+                display: none;
+            }
+
             &:hover {
                 opacity: 0.7;
             }
@@ -85,6 +103,7 @@
             outline: none;
             color: #ffffff;
             font-size: 15px;
+
             &:hover {
                 opacity: 0.7;
             }
@@ -110,6 +129,7 @@
             margin-bottom: 24px;
             cursor: pointer;
             outline: none;
+
             &:hover {
                 opacity: 0.7;
             }
@@ -119,7 +139,7 @@
             position: relative;
             display: flex;
             margin-bottom: 44px;
-            
+
 
             &-input {
                 appearance: none;
@@ -236,6 +256,7 @@
             span {
                 a {
                     color: #ea2f55;
+
                     &:hover {
                         opacity: 0.7;
                     }
@@ -245,53 +266,136 @@
     }
 }
 
+.forgPass,
+.signBlock {
+    display: none;
+}
+
+.sign-content__a-none {
+    display: block;
+}
+
+#forgotPass {
+    display: none;
+}
+
 @media (max-height: 830px) {
     .sign-content p {
         margin-bottom: 20px;
         font-size: 1rem;
     }
+
     .sign-content h1 {
         font-size: 30px;
     }
+
     .sign-content button {
         margin-top: 15px;
     }
+
     .sign-content__a,
     .sign-content__checkbox-label,
     .sign-content__p,
     .sign-content button {
         font-size: 1rem;
     }
+
     .sign-content button {
         height: 35px;
     }
+
     .sign-content__input {
         height: 30px;
     }
+
     .sign {
         height: 100%;
     }
 }
 
 @media (max-width: 767px) {
-    .sign-photo {
+    #forgotPass {
+        display: block;
+    }
+    .sign-content__a-none,
+    .sign-content__p {
         display: none;
     }
-    .sign {
-        align-items: baseline;
-    }
-    .sign-content__logo {
+    .sign-photo__mobile {
         display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 15px;
         img {
-            width: 120px;
-        height: 50px;
+            margin-bottom: 10px;
+            z-index: 2389;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+            text-transform: uppercase;
+            z-index: 2569;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+        p {
+            color: #ffffffa4;
+            margin-bottom: 40px;
+            z-index: 2458;
+        }
+        button {
+            outline: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+            background-color: #ea2f55;
+            height: 38px;
+            width: 100%;
+            z-index: 2657;
+            color: #ffffff;
+            font-weight: 500;
+            margin-bottom: 40px;
+            &:active {
+                opacity: 0.7;
+            }
         }
     }
+    .sign-none {
+        display: none;
+    }
+    .content-none,
+    .sign-photo__logo {
+        display: none;
+    }
+
+    .sign {
+        align-items: baseline;
+        height: 100%;
+    }
+
     .content__logo {
         margin-top: 20px;
+    }
+
+    .sign-content__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        a {
+            font-size: 1;
+            color: #ea2f55;
+            cursor: pointer;
+            &:active {
+                opacity: 0.7;
+            }
+            i {
+                color: #ea2f55;
+                margin-left: 5px;
+            }
+        }
     }
 }
 
@@ -302,15 +406,13 @@
     }
 }
 
-@media (min-height: 435px) and (max-height: 825px){
-    .sign {
-        height: 100vh;
+@media (min-height: 350px) and (max-height: 825px) {
+    .sign-content {
+        padding: 0px 15px;
     }
-}
 
-@media (min-height: 350px) and (max-height: 825px){
-    .sign-mobile {
-        height: 100vh;
+    .sign {
+        justify-content: flex-start;
     }
 }
 
@@ -319,11 +421,13 @@
         font-size: 20px;
         margin-bottom: 0;
     }
+
     .sign-content p,
     .sign-content__input,
     .sign-content button {
         margin-bottom: 10px;
     }
+
     .sign-content p,
     .sign-content__input::placeholder,
     .sign-content__input,
@@ -332,9 +436,15 @@
     .sign-content__a {
         font-size: 10px;
     }
+
     .sign-content__checkbox {
         margin-bottom: 25px;
     }
 }
 
+@media (max-width: 600px) {
+    .sign-content__line-content {
+        left: 47%;
+    }
+}
 

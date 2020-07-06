@@ -66,3 +66,7 @@ $("#fl_inp").change(function(){
       var filename = $(this).val().replace(/.*\\/, "");
       $("#fl_nm").html(filename);
 });
+
+
+
+
