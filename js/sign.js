@@ -47,38 +47,35 @@
 
 
 
+// $("#getstarted").click(function() {
+//     $('#signStart').animate({
+//         width: "toggle"
+//     });
+//     $('#signIn').show();
+// });
+
 $("#getstarted").click(function() {
-    $('#signStart').animate({
-        width: "toggle"
-    });
+    $('#signStart').open();
     $('#signIn').show();
 });
 
 $('#forgotPass').click(function() {
-    $('#forgotBlock').animate({
-        width: "toggle"
-    });
+    $('#forgotBlock').open();
     $('#signIn').hide();
 });
 
 $('#backLogin').click(function() {
-    $('#signIn').animate({
-        width: "toggle"
-    });
+    $('#signIn').open();
     $('#forgotBlock').hide();
 });
 
 $('#signUp').click(function() {
-    $('#signBlock').animate({
-        width: "toggle"
-    });
+    $('#signBlock').open();
     $('#signIn').hide();
 });
 
 $('#signInBtn').click(function() {
-    $('#signIn').animate({
-        width: "toggle"
-    });
+    $('#signIn').open();
     $('#signBlock').hide();
 });
 
