@@ -3340,6 +3340,72 @@
   color: #747474;
 }
 
+.whats-hot__slider,
+.whats-hot__h2,
+.whats-hot__mobile {
+  display: none;
+}
+
+.offerSlide {
+  height: 132px;
+  border-radius: 16px;
+}
+
+.offerSlide__footer__author {
+  font-size: 12px;
+}
+
+.offerSlide__footer__author span small {
+  font-size: 12px;
+}
+
+.offerSlide__footer p {
+  font-size: 14px;
+}
+
+.offerSlide__footer h5 {
+  font-size: 18px;
+}
+
+.offerSlide__footer h5 span {
+  font-size: 17px;
+}
+
+.offerSlide a {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #848484;
+  border: 1px solid #d2d2d2;
+  opacity: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offerSlide a:hover {
+  opacity: 0.7;
+}
+
+.offerSlide i {
+  position: absolute;
+  padding-left: 5px;
+  color: #ea2f55;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tutorials-width {
+  width: 195px !important;
+}
+
 .sliderOnline {
   position: relative;
   display: -webkit-box;
@@ -3398,6 +3464,9 @@
 }
 
 @media (max-width: 600px) {
+  .whats-hot__mobile {
+    display: block;
+  }
   .slick-slide {
     margin-right: 20px;
   }
@@ -3433,7 +3502,8 @@
   .nav-menu__left-mobileIcon {
     display: block;
   }
-  .whats-hot__slider {
+  .whats-hot__slider,
+  .whats-hot__h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

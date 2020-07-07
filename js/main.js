@@ -36,10 +36,18 @@ $("#whats-hot__sliderOnline").slick({
   arrows: false,
 });
 
+$("#whats-hot__offers").slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  arrows: false,
+});
+
 $("#whats-hot__tutorials").slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
+  variableWidth: true,
   arrows: false,
 });
 
