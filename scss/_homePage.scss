@@ -11,6 +11,50 @@
     &__left {
         display: flex;
         align-items: center;
+        &-mobileIcon {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+            &__block1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #ea2f55;
+                width: 9px;
+                height: 9px;
+                border-radius: 2px;
+            }
+            &__block2 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #ea2f55;
+                width: 9px;
+                height: 9px;
+                border-radius: 2px;
+            }
+            &__block3 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #ea2f55;
+                width: 9px;
+                height: 9px;
+                border-radius: 2px;
+            }
+            &__block4 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: #ea2f55;
+                width: 9px;
+                height: 9px;
+                border-radius: 2px;
+            }
+        }
 
         img {
             margin-right: 160px;
@@ -121,14 +165,6 @@
                 cursor: pointer;
             }
         }
-
-        button {
-            display: none;
-            background: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
     }
 }
 
@@ -137,6 +173,7 @@
     background-repeat: no-repeat;
     background-position-y: 80px;
     background-size: cover;
+    background-position: center center;
     position: relative;
 }
 
@@ -216,16 +253,24 @@
 .whats-hot {
     background: #141414;
     padding: 54px 52px 80px 60px;
-
-    h2 {
-        font-size: 28px;
-        font-weight: 800;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #ffffff;
+    &__h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 30px;
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: #ffffff;
+           
+    
+            span {
+                color: #ea2f55;
+            }
+        }
+        i {
 
-        span {
-            color: #ea2f55;
         }
     }
 
@@ -631,10 +676,7 @@
 
 @media (max-width: 900px) {
     .nav-menu__left img {
-        margin-right: 80px;
-    }
-    #menu {
-        display: none;
+        margin-right: 40px;
     }
 
     .nav-menu {
@@ -702,8 +744,8 @@
     .online,
     .online-slider,
     .qualified {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .qualified {

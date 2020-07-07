@@ -19,6 +19,12 @@
     <header>
         <div class="nav-menu">
             <div class="nav-menu__left">
+                <div class="nav-menu__left-mobileIcon" id="mobileIcon">
+                    <div class="nav-menu__left-mobileIcon__block1"></div>
+                    <div class="nav-menu__left-mobileIcon__block2"></div>
+                    <div class="nav-menu__left-mobileIcon__block3"></div>
+                    <div class="nav-menu__left-mobileIcon__block4"></div>
+                </div>
                 <img src="img/logo.png" alt="logo">
                 <div class="nav-menu__left-search">
                     <input type="text" placeholder="Search">
@@ -42,14 +48,13 @@
                     </li>
                 </ul>
 
-                <button id="menu-btn">
-                    <img src="img/menu-btn.png" alt="menu-btn">
-                </button>
-
             </div>
             <!-- /.nav-menu__right -->
         </div>
         <!-- /.nav-menu -->
+        <div class="nav-menu__left-search d-block">
+            <input type="text" placeholder="Search">
+        </div>
 
         <div class="header homepageBg">
             <h2>No need to move any where</h2>
@@ -70,7 +75,10 @@
 
     <main>
         <div class="whats-hot">
-            <h2>What's <span>Hot</span></h2>
+            <div class="whats-hot__h2">
+                <h2>What's <span>Hot</span></h2>
+                <i class="fas fa-arrow-right fa-2x"></i>
+            </div>
             <div class="whats-hot__books">
                 <div class="whats-hot__books__book">
                     <img src="img/the-future-is-faster.png" alt="future">
