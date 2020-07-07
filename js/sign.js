@@ -55,27 +55,27 @@
 // });
 
 $("#getstarted").click(function() {
-    $('#signStart').open();
+    $('#signStart').hide();
     $('#signIn').show();
 });
 
 $('#forgotPass').click(function() {
-    $('#forgotBlock').open();
+    $('#forgotBlock').show();
     $('#signIn').hide();
 });
 
 $('#backLogin').click(function() {
-    $('#signIn').open();
+    $('#signIn').show();
     $('#forgotBlock').hide();
 });
 
 $('#signUp').click(function() {
-    $('#signBlock').open();
+    $('#signBlock').show();
     $('#signIn').hide();
 });
 
 $('#signInBtn').click(function() {
-    $('#signIn').open();
+    $('#signIn').show();
     $('#signBlock').hide();
 });
 
