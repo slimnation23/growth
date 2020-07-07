@@ -253,6 +253,9 @@
 .whats-hot {
     background: #141414;
     padding: 54px 52px 80px 60px;
+    &__slider {
+        display: none;
+    }
     &__h2 {
         display: flex;
         justify-content: space-between;
@@ -269,8 +272,10 @@
                 color: #ea2f55;
             }
         }
-        i {
-
+        a {
+            i {
+                color: #d2d2d2;
+            }
         }
     }
 
@@ -291,6 +296,11 @@
 
             min-width: 226px;
             min-height: 256px;
+            &-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+            }
 
             img {
                 max-width: 100%;
