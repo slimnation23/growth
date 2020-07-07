@@ -2,14 +2,21 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+
     p {
         font-size: 10px;
         letter-spacing: 0px;
         color: #d2d2d2;
     }
+
     span {
         font-size: 9px;
         color: #747474;
+
+        i {
+            color: #d2d2d2;
+            margin-right: 3px;
+        }
     }
 }
 
@@ -22,7 +29,15 @@
 .offerSlide {
     height: 132px;
     border-radius: 16px;
+
     &__footer {
+        h4 {
+            color: #ea2f55;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1;
+            font-weight: 500;
+        }
         &__author {
             font-size: 12px;
             span {
@@ -31,17 +46,20 @@
                 }
             }
         }
+
         p {
             font-size: 14px;
         }
+
         h5 {
             font-size: 18px;
+
             span {
                 font-size: 17px;
             }
         }
     }
-    
+
     a {
         position: absolute;
         width: 43px;
@@ -53,6 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         &:hover {
             opacity: 0.7;
         }
@@ -69,6 +88,10 @@
 
 .tutorials-width {
     width: 195px !important;
+
+    &__height {
+        height: 113px !important;
+    }
 }
 
 .sliderOnline {
@@ -76,11 +99,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__slide {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+
         a {
             position: absolute;
             width: 43px;
@@ -92,6 +117,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             &:hover {
                 opacity: 0.7;
             }
@@ -107,15 +133,41 @@
     }
 }
 
+.nav-mobile {
+    display: none;
+}
+
 @media (max-width: 600px) {
+    .nav-mobile {
+        position: fixed;
+        bottom: 15px;
+        left: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        border-radius: 12px;
+        background-color: #ea2f55;
+        a {
+            i {
+                color: #ffffff;
+            }
+        }
+    }
+
     .whats-hot__mobile {
         display: block;
     }
+
     .slick-slide {
         margin-right: 20px;
     }
+
     .whats-hot__books {
         justify-content: flex-start;
+
         &__book {
             width: 126px;
             height: 151px;
@@ -126,10 +178,11 @@
             min-height: auto;
             margin-right: 0;
         }
-    } 
+    }
+
     .nav-menu__left img,
     .nav-menu__left-search,
-    .nav-menu__right ul li + .nav-menu__right-down,
+    .nav-menu__right ul li+.nav-menu__right-down,
     .header,
     .whats-hot__books,
     .online,
@@ -137,46 +190,59 @@
     footer {
         display: none;
     }
+
     .nav-menu {
         position: static;
         background-color: transparent;
     }
+
     .nav-menu__left-mobileIcon {
         display: block;
     }
+
     .whats-hot__slider,
     .whats-hot__h2 {
         display: flex;
     }
+
     .nav-menu__right ul li {
         margin-right: 0;
+
         &:first-child {
             margin-right: 20px;
         }
     }
+
     .nav-menu__right {
         padding-top: 7px;
     }
+
     .nav-menu__left-search {
         border: 1px solid #747474;
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .nav-menu__left-search input {
         padding-top: 8px;
     }
+
     .whats-hot {
         color: #d2d2d2;
         padding: 10px 20px 10px 20px;
+
         &__h2 {
             margin-bottom: 18px;
+
             h2 {
                 color: #d2d2d2;
                 font-weight: 500;
+                font-size: 18px;
+
                 span {
                     color: #d2d2d2;
                 }
             }
-        } 
+        }
     }
 }
