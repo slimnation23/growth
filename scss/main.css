@@ -3424,6 +3424,37 @@
   color: #ea2f55;
 }
 
+#books-content,
+#tutorial-content {
+  display: none;
+}
+
+.tutorial {
+  margin-right: 0;
+  width: 155px;
+}
+
+.tutorial-footer__author span {
+  font-size: 9px;
+}
+
+.tutorial-footer__author span small {
+  font-size: 9px;
+}
+
+.tutorial-footer p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.tutorial-footer h5 {
+  font-size: 14px;
+}
+
+.tutorial-footer h5 span {
+  font-size: 13px;
+}
+
 .whats-hot__sliderBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3433,6 +3464,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 15px;
+  margin-right: 14px;
 }
 
 .whats-hot__sliderBlock p {
@@ -3609,6 +3641,18 @@
     border-radius: 12px;
     background-color: #ea2f55;
   }
+  .nav-mobile-active {
+    position: relative;
+  }
+  .nav-mobile-active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -14px;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
   .nav-mobile a i {
     color: #ffffff;
   }
@@ -3650,7 +3694,16 @@
   .nav-menu__left-mobileIcon {
     display: block;
   }
-  .whats-hot__slider,
+  .whats-hot__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .whats-hot__h2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3669,6 +3722,7 @@
     border: 1px solid #747474;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 15px;
   }
   .nav-menu__left-search input {
     padding-top: 8px;

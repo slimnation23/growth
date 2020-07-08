@@ -81,6 +81,10 @@
 }
 
 
+#books-content,
+#tutorial-content {
+    display: none;
+}
 
 
 
@@ -102,13 +106,37 @@
 
 
 
-
+.tutorial {
+    margin-right: 0;
+    width: 155px;
+    &-footer {
+        &__author {
+            span {
+                font-size: 9px;
+                small {
+                    font-size: 9px;
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        h5 {
+            font-size: 14px;
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+}
 
 
 .whats-hot__sliderBlock {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    margin-right: 14px;
 
     p {
         font-size: 10px;
@@ -259,6 +287,18 @@
         height: 50px;
         border-radius: 12px;
         background-color: #ea2f55;
+        &-active {
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -14px;
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+            }
+        }
 
         a {
             i {
@@ -310,7 +350,11 @@
         display: block;
     }
 
-    .whats-hot__slider,
+    .whats-hot__slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .whats-hot__h2 {
         display: flex;
     }
@@ -331,6 +375,7 @@
         border: 1px solid #747474;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 15px;
     }
 
     .nav-menu__left-search input {

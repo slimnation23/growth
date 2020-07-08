@@ -21,6 +21,36 @@ $("#close").click(function(){
   $('#content').slideDown(500);
 });
 
+$("#dashboard").click(function(e) {
+  $("#dashboard-content").fadeIn();
+  $("#books-content").hide();
+  $("#tutorial-content").hide();
+  $(this).addClass('nav-mobile-active');
+
+  $('#books').removeClass('nav-mobile-active');
+  $('#tutorial').removeClass('nav-mobile-active');
+});
+
+$("#books").click(function(e) {
+  $("#books-content").fadeIn();
+  $("#dashboard-content").hide();
+  $("#tutorial-content").hide();
+  $(this).addClass('nav-mobile-active');
+
+  $('#dashboard').removeClass('nav-mobile-active');
+  $('#tutorial').removeClass('nav-mobile-active');
+});
+
+$("#tutorial").click(function(e) {
+  $("#tutorial-content").fadeIn();
+  $("#dashboard-content").hide();
+  $("#books-content").hide();
+  $(this).addClass('nav-mobile-active');
+
+  $('#dashboard').removeClass('nav-mobile-active');
+  $('#books').removeClass('nav-mobile-active');
+});
+
 $("#online-slider").slick({
   infinite: true,
   speed: 300,

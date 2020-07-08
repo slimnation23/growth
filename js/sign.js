@@ -56,26 +56,26 @@
 
 $("#getstarted").click(function() {
     $('#signStart').hide();
-    $('#signIn').show();
+    $('#signIn').fadeIn();
 });
 
 $('#forgotPass').click(function() {
-    $('#forgotBlock').show();
+    $('#forgotBlock').fadeIn();
     $('#signIn').hide();
 });
 
 $('#backLogin').click(function() {
-    $('#signIn').show();
+    $('#signIn').fadeIn();
     $('#forgotBlock').hide();
 });
 
 $('#signUp').click(function() {
-    $('#signBlock').show();
+    $('#signBlock').fadeIn();
     $('#signIn').hide();
 });
 
 $('#signInBtn').click(function() {
-    $('#signIn').show();
+    $('#signIn').fadeIn();
     $('#signBlock').hide();
 });
 
