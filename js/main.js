@@ -11,6 +11,16 @@
 //   dropdownMenu.classList.toggle("drop-active");
 // };
 
+$("#mobileIcon").click(function(){
+  $('#content').slideUp(500);
+  $('#menu').show();
+});
+
+$("#close").click(function(){
+  $('#menu').hide();
+  $('#content').slideDown(500);
+});
+
 $("#online-slider").slick({
   infinite: true,
   speed: 300,

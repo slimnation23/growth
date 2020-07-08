@@ -1,3 +1,110 @@
+.menu {
+    padding: 26px 19px 40px 19px;
+    font-size: 18px;
+    color: #d2d2d2;
+    background-color: #212121;
+    display: none;
+    height: 100%;
+
+    &-top {
+        display: flex;
+        position: relative;
+        align-items: center;
+        border-bottom: 1px solid #707070;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+
+        img {
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            border: 2px solid #ea2f55;
+            margin-right: 13px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-size: 1;
+                color: #ea2f55;
+            }
+        }
+
+        &__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            i {
+                color: #d2d2d2;
+            }
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        color: #ffffff;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #ea2f55;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 19px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        color: #d2d2d2;
+                        text-transform: capitalize;
+                        &:active {
+                            color: #ea2f55;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .whats-hot__sliderBlock {
     display: flex;
     flex-direction: column;
@@ -38,8 +145,10 @@
             line-height: 1;
             font-weight: 500;
         }
+
         &__author {
             font-size: 12px;
+
             span {
                 small {
                     font-size: 12px;
@@ -150,6 +259,7 @@
         height: 50px;
         border-radius: 12px;
         background-color: #ea2f55;
+
         a {
             i {
                 color: #ffffff;

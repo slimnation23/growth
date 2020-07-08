@@ -3318,6 +3318,112 @@
   }
 }
 
+.menu {
+  padding: 26px 19px 40px 19px;
+  font-size: 18px;
+  color: #d2d2d2;
+  background-color: #212121;
+  display: none;
+  height: 100%;
+}
+
+.menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.menu-top img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 2px solid #ea2f55;
+  margin-right: 13px;
+}
+
+.menu-top__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-top__info a {
+  font-size: 1;
+  color: #ea2f55;
+}
+
+.menu-top__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-top__close i {
+  color: #d2d2d2;
+}
+
+.menu-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-body ul li {
+  margin-bottom: 10px;
+}
+
+.menu-body ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-body ul li a i {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: #ea2f55;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 19px;
+}
+
+.menu-body ul li a span {
+  font-size: 18px;
+  color: #d2d2d2;
+  text-transform: capitalize;
+}
+
+.menu-body ul li a span:active {
+  color: #ea2f55;
+}
+
 .whats-hot__sliderBlock {
   display: -webkit-box;
   display: -ms-flexbox;
