@@ -11,6 +11,9 @@
     &__left {
         display: flex;
         align-items: center;
+        &-back {
+            color: #ea2f55;
+        }
         &-mobileIcon {
             position: relative;
             width: 25px;

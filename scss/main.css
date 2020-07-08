@@ -551,6 +551,10 @@
           align-items: center;
 }
 
+.nav-menu__left-back {
+  color: #ea2f55;
+}
+
 .nav-menu__left-mobileIcon {
   position: relative;
   width: 25px;
@@ -3675,11 +3679,272 @@
   cursor: pointer;
 }
 
-.nav-mobile {
+.nav-mobile,
+.book {
   display: none;
 }
 
 @media (max-width: 600px) {
+  .history-card__content__shortLine,
+  .history-card__content-line,
+  #comments-none {
+    display: none;
+  }
+  .book {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+  }
+  .book-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 15px;
+  }
+  .book-img__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 25px;
+  }
+  .book-img__left img {
+    width: 45px;
+    height: 58px;
+    margin-bottom: 12px;
+  }
+  .book-img__right {
+    width: 100%;
+    min-height: 213px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 12px;
+    background-color: #2b2b2b;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  .book-img__right img {
+    height: auto;
+    width: 100%;
+  }
+  .book-rang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-rang__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .book-rang__stars i {
+    color: #ea2f55;
+    margin-right: 3px;
+  }
+  .book-rang__stars span {
+    font-size: 11px;
+    color: #747474;
+    margin-left: 4px;
+  }
+  .book-rang h5 {
+    color: #ea2f55;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    line-height: 1;
+  }
+  .book-info {
+    margin-bottom: 24px;
+  }
+  .book-info h1 {
+    font-size: 21px;
+    color: #d2d2d2;
+    font-weight: 500;
+  }
+  .book-info p {
+    font-size: 15px;
+    line-height: 19px;
+    color: #747474;
+  }
+  .book-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .book-price__purchase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 5px;
+  }
+  .book-price__purchase h2 {
+    font-size: 25px;
+    color: #747474;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .book-price__purchase a button {
+    width: 141px;
+    height: 34px;
+    border-radius: 17px;
+    -webkit-filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ea2f55;
+    border: 1px solid #ea2f55;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+  }
+  .book-price__line {
+    height: 72px;
+    width: 1px;
+    background-color: #707070;
+    margin-right: 5px;
+  }
+  .book-price__rent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-price__rent h2 {
+    font-size: 25px;
+    color: #747474;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .book-price__rent a button {
+    width: 141px;
+    height: 34px;
+    border-radius: 17px;
+    -webkit-filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: transparent;
+    border: 1px solid #ea2f55;
+    font-size: 16px;
+    outline: none;
+    color: #ea2f55;
+  }
+  .book-description {
+    margin-bottom: 20px;
+  }
+  .book-description h2 {
+    font-size: 25px;
+    color: #d2d2d2;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .book-description p {
+    font-size: 15px;
+    color: #747474;
+  }
+  .book-description ul li {
+    font-size: 15px;
+    color: #747474;
+  }
+  .restrew {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #0f0f0f;
+    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .restrew-invite {
+    text-align: left;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .restrew-invite__content {
+    padding-top: 0;
+  }
+  .restrew h3 {
+    font-size: 19px;
+    color: #ea2f55;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .restrew h5 {
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 10px;
+  }
+  .restrew h2 {
+    font-size: 15px;
+    color: #d2d2d2;
+    font-weight: 500;
+  }
+  .restrew-rang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .restrew-rang span {
+    font-size: 24px;
+    color: #ea2f55;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+  .restrew-rang__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restrew-rang__stars i {
+    color: #ffffff;
+    margin-right: 7px;
+    background-color: #ea2f55;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  #main {
+    display: none;
+  }
   .nav-mobile {
     position: fixed;
     bottom: 15px;
@@ -3798,6 +4063,16 @@
   }
   .whats-hot__h2 h2 span {
     color: #d2d2d2;
+  }
+}
+
+@media (max-width: 333px) {
+  .book-price__line {
+    display: none;
+  }
+  .book-price__purchase,
+  .book-price__rent {
+    margin-bottom: 10px;
   }
 }
 
