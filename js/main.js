@@ -1,5 +1,5 @@
-// let dropdownMenu = document.getElementById("dropdown-menu");
-// let dropdownBtn = document.getElementById("dropdown-btn");
+let dropdownMenu = document.getElementById("dropdown-menu");
+let dropdownBtn = document.getElementById("dropdown-btn");
 // let menu = document.getElementById("menu");
 // let menuBtn = document.getElementById("menu-btn");
 
@@ -7,9 +7,9 @@
 //   menu.classList.toggle("active");
 // };
 
-// dropdownBtn.onclick = function () {
-//   dropdownMenu.classList.toggle("drop-active");
-// };
+dropdownBtn.onclick = function () {
+  dropdownMenu.classList.toggle("drop-active");
+};
 
 $("#mobileIcon").click(function(){
   $('#content').slideUp(500);

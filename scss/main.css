@@ -3429,6 +3429,63 @@
   display: none;
 }
 
+.profile {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.profile h1 {
+  font-size: 18px;
+  line-height: 1;
+  color: #d2d2d2;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.profile-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-content img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  margin-bottom: 32px;
+}
+
+.profile-content__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-content__btn button {
+  width: 100%;
+  background-color: #ea2f55;
+  border-radius: 23px;
+  height: 45px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .tutorial {
   margin-right: 0;
   width: 155px;
