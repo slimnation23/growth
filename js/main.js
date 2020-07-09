@@ -120,6 +120,12 @@ $("#history-slider").slick({
       settings: {
         slidesToShow: 1
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
     }
   ]
 });

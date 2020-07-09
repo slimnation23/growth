@@ -277,6 +277,7 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
 
     &__add {
@@ -386,12 +387,8 @@
 }
 
 .history-slide {
-    max-width: 420px;
+    max-width: 380px;
     margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
 // My-Task
@@ -654,7 +651,7 @@
 
 // Growth Mindset
 .purchase {
-    margin-top: 60px !important;
+    padding-top: 110px;
     width: 67% !important;
     justify-content: flex-start !important;
     margin-right: 50px;
@@ -815,8 +812,8 @@
 
     .info-line-a__active::after {
         bottom: -13px;
-        width: 354%;
-        left: -59px;
+        width: 100%;
+        left: 0;
         height: 3px;
         z-index: 156;
     }
@@ -827,7 +824,28 @@
     }
 
     .history-card {
-        margin-right: 0;
+        margin-right: 10px;
+        width: 100px;
+        margin-bottom: 20px;
+        img {
+            max-width: 100%;
+            height: 133px;
+            object-fit: cover;
+        }
+        button {
+            display: none;
+        }
+        &__body {
+            span {
+                font-size: 9px;
+            }
+            small {
+                font-size: 9px;
+            }
+        }
+        p {
+            font-size: 9px;
+        }
     }
 
     .invite-info a {
