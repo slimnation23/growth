@@ -810,13 +810,15 @@
         margin-bottom: 10px;
         margin-right: 0;
         font-size: 14px;
+        font-weight: 500;
     }
 
     .info-line-a__active::after {
         bottom: -13px;
-        width: 370%;
-        left: -62px;
+        width: 354%;
+        left: -59px;
         height: 3px;
+        z-index: 156;
     }
 
     .offers img {

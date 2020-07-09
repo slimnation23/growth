@@ -2384,12 +2384,14 @@
     margin-bottom: 10px;
     margin-right: 0;
     font-size: 14px;
+    font-weight: 500;
   }
   .info-line-a__active::after {
     bottom: -13px;
-    width: 370%;
-    left: -62px;
+    width: 354%;
+    left: -59px;
     height: 3px;
+    z-index: 156;
   }
   .offers img {
     width: 100%;
@@ -3549,9 +3551,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .profile-content img {
@@ -3560,6 +3559,9 @@
   border-radius: 50%;
   border: 1px solid #707070;
   margin-bottom: 32px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .profile-content__btn {
@@ -3828,6 +3830,7 @@
   .info-line {
     border-bottom: 3px solid #747474;
     margin-bottom: 60px;
+    z-index: 6;
   }
   .info-line ul {
     -webkit-box-orient: horizontal;
