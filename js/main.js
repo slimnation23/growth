@@ -143,3 +143,6 @@ $("#fl_inp").change(function(){
       $("#fl_nm").html(filename);
 });
 
+$(".wishlist-items__book-close").click(function(){
+  $(this).parent().hide();
+});
