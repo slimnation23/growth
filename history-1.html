@@ -16,46 +16,49 @@
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-    <div class="nav-menu">
-        <div class="nav-menu__left">
-            <img src="img/logo.png" alt="logo">
-            <div class="nav-menu__left-search">
-                <input type="text" placeholder="Search">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+    <section id="content">
+        <div class="nav-menu">
+            <div class="nav-menu__left">
+                <div class="nav-menu__left-mobileIcon" id="mobileIcon">
+                    <div class="nav-menu__left-mobileIcon__block1"></div>
+                    <div class="nav-menu__left-mobileIcon__block2"></div>
+                    <div class="nav-menu__left-mobileIcon__block3"></div>
+                    <div class="nav-menu__left-mobileIcon__block4"></div>
+                </div>
+                <img src="img/logo.png" alt="logo">
+                <div class="nav-menu__left-search">
+                    <input type="text" placeholder="Search">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
             </div>
+            <!-- /.nav-menu__left -->
+            <div class="nav-menu__right">
+                <ul>
+                    <li class="nav-menu__right-chart"><a href="#"><img src="img/chart.png" alt="chart"></a></li>
+                    <li class="nav-menu__right-alert"><a href="#"><img src="img/alert.png" alt="alert"></a></li>
+                    <li class="nav-menu__right-down" id="dropdown-btn">
+                        <div>
+                            <img src="img/userimg.png" alt="user">
+                            <ul class="nav-menu__right-down__dropdown" id="dropdown-menu">
+                                <li>TEXT</li>
+                                <li>TEXT</li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.nav-menu__right -->
         </div>
-        <!-- /.nav-menu__left -->
-        <div class="nav-menu__right">
-            <ul id="menu">
-                <li class="nav-menu__right-chart"><a href="#"><img src="img/chart.png" alt="chart"></a></li>
-                <li class="nav-menu__right-alert"><a href="#"><img src="img/alert.png" alt="alert"></a></li>
-                <li class="nav-menu__right-down" id="dropdown-btn">
-                    <div>
-                        <img src="img/userimg.png" alt="user">
-                        <ul class="nav-menu__right-down__dropdown" id="dropdown-menu">
-                            <li>TEXT</li>
-                            <li>TEXT</li>
-                        </ul>
-                    </div>
-                    
-                </li>
-            </ul>
+        <!-- /.nav-menu -->
 
-            <button id="menu-btn">
-                <img src="img/menu-btn.png" alt="menu-btn">
-            </button>
-
-        </div>
-        <!-- /.nav-menu__right -->
-    </div>
-    <!-- /.nav-menu -->
-
-    <div class="view view-second">
+    <div class="view view-second desctop-content">
         <img src="img/historyBg.jpg" alt="Wishlist">
         <div class="mask"></div>
     </div>
 
-    <div class="history">
+    <div class="history desctop-content">
         
         <div class="history-card history-firstBlock">
             <div class="history-card__content">
@@ -144,7 +147,7 @@
     </div>
     <!-- /.viewLine -->
 
-    <div class="my-container">
+    <div class="my-container desctop-content">
         <div class="history-video">
             <h2>Out Latest Videos Tutorials</h2>
             <div class="history-video__controls"></div>
@@ -212,6 +215,195 @@
         </div>
     </div>
     <!-- my-container -->
+
+    <div class="my-container">
+        <div class="mobile-content">
+            <div class="profile pl-0 pr-0 pb-0" id="profile">
+                <h1>History</h1>
+            </div>
+            <div class="wishlist-items">
+                <div class="wishlist-items__book">
+                    <img src="img/100-content.png" alt="img">
+                    <div class="wishlist-items__book-info">
+                        <a>100 Content Marketing Tips</a>
+                        <span>Type : Rent</span>
+                        <p>$5.00</p>
+                    </div>
+                </div>
+
+                <div class="wishlist-items__book">
+                    <img src="img/100-content.png" alt="img">
+                    <div class="wishlist-items__book-info">
+                        <a>100 Content Marketing Tips</a>
+                        <span>Type : Rent</span>
+                        <div class="wishlist-items__book-info__price">
+                            <p>$5.00</p>
+                            <div class="wishlist-items__book-info__price-author">
+                                <p><span>By</span>: Jos Portilla</p>
+                                <p><span>35min</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wishlist-items">
+                    <div class="wishlist-items__book">
+                        <img src="img/100-content.png" alt="img">
+                        <div class="wishlist-items__book-info">
+                            <a>100 Content Marketing Tips</a>
+                            <span>Type : Rent</span>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+    
+                    <div class="wishlist-items__book">
+                        <img src="img/100-content.png" alt="img">
+                        <div class="wishlist-items__book-info">
+                            <a>100 Content Marketing Tips</a>
+                            <span>Type : Rent</span>
+                            <div class="wishlist-items__book-info__price">
+                                <p>$5.00</p>
+                                <div class="wishlist-items__book-info__price-author">
+                                    <p><span>By</span>: Jos Portilla</p>
+                                    <p><span>35min</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-items">
+                        <div class="wishlist-items__book">
+                            <img src="img/100-content.png" alt="img">
+                            <div class="wishlist-items__book-info">
+                                <a>100 Content Marketing Tips</a>
+                                <span>Type : Rent</span>
+                                <p>$5.00</p>
+                            </div>
+                        </div>
+            </div>
+            <!-- /.wishlist-items -->
+        </div>
+        <!-- /.mobile-content -->
+    </div>
+    <!-- /.wishlist-mobile -->
+    </div>
+    </div>
+</section>
+
+<div class="menu" id="menu">
+    <div class="menu-top">
+        <img src="img/icons/Эллипс 10.png" alt="photo">
+        <div class="menu-top__info">
+            <h4>Will Smith</h4>
+            <a href="mailto:willsmith@gmail.com">willsmith@gmail.com</a>
+        </div>
+        <a href="#" class="menu-top__close" id="close"><i class="fas fa-times fa-lg"></i></a>
+    </div>
+    <!-- /.menu-top -->
+
+    <div class="menu-body">
+        <ul>
+            <li>
+                <a href="homePage.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/home.svg" alt="home">
+                    </div>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="my-profile.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/user.svg" alt="user">
+                    </div>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="change-password.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/padlock.svg" alt="padlock">
+                    </div>
+                    <span>Change Password</span>
+                </a>
+            </li>
+            <li>
+                <a href="my-task-1.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/add.svg" alt="add">
+                    </div>
+                    <span>Invite friends</span>
+                </a>
+            </li>
+            <li>
+                <a href="upload-product.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/book (2).svg" alt="book">
+                    </div>
+                    <span>Upload product</span>
+                </a>
+            </li>
+            <li>
+                <a href="my-task.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/clipboard.svg" alt="book">
+                    </div>
+                    <span>my task</span>
+                </a>
+            </li>
+            <li>
+                <a href="my-purchase.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/bag.svg" alt="bag">
+                    </div>
+                    <span>my purchase</span>
+                </a>
+            </li>
+            <li>
+                <a href="growth-mindset.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/growth.svg" alt="growth">
+                    </div>
+                    <span>growth mindset</span>
+                </a>
+            </li>
+            <li>
+                <a href="wishlist.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/heart.svg" alt="heart">
+                    </div>
+                    <span>wishlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="history-1.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/time.svg" alt="time">
+                    </div>
+                    <span>history</span>
+                </a>
+            </li>
+            <li>
+                <a href="manage-address.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/address.svg" alt="address">
+                    </div>
+                    <span>manage address</span>
+                </a>
+            </li>
+            <li>
+                <a href="signIn.html">
+                    <div class="menu-body__img">
+                        <img src="img/icons/logout.svg" alt="logout">
+                    </div>
+                    <span>logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.menu-body -->
+</div>
+<!-- /#menu.menu -->
     
 
 

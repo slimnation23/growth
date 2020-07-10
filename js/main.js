@@ -143,8 +143,3 @@ $("#fl_inp").change(function(){
       $("#fl_nm").html(filename);
 });
 
-
-
-
-
-
