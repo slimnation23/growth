@@ -309,36 +309,28 @@
     }
 
     &__slide {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
 
         a {
-            position: absolute;
             width: 98px;
             height: 98px;
             border-radius: 50%;
-            background: #000000;
-            opacity: 0.3;
+            background: #141414;
             display: flex;
             justify-content: center;
             align-items: center;
             outline: none;
-
-            &:hover {
-                opacity: 0.7;
+            i {
+                padding-left: 5px;
+                color: #ea2f55;
+                opacity: 1;
             }
         }
 
-        i {
-            position: absolute;
-            padding-left: 8px;
-            color: #ea2f55;
-            opacity: 1;
-            cursor: pointer;
-        }
+        
     }
 
     &__footer {

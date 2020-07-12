@@ -1810,7 +1810,6 @@
 }
 
 .history-slider__slide {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1824,12 +1823,10 @@
 }
 
 .history-slider__slide a {
-  position: absolute;
   width: 98px;
   height: 98px;
   border-radius: 50%;
-  background: #000000;
-  opacity: 0.3;
+  background: #141414;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1842,16 +1839,10 @@
   outline: none;
 }
 
-.history-slider__slide a:hover {
-  opacity: 0.7;
-}
-
-.history-slider__slide i {
-  position: absolute;
-  padding-left: 8px;
+.history-slider__slide a i {
+  padding-left: 5px;
   color: #ea2f55;
   opacity: 1;
-  cursor: pointer;
 }
 
 .history-slider__footer {
@@ -3704,13 +3695,10 @@
 }
 
 .offerSlide a {
-  position: absolute;
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  background-color: #848484;
-  border: 1px solid #d2d2d2;
-  opacity: 0.3;
+  background-color: #141414;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3722,16 +3710,9 @@
           align-items: center;
 }
 
-.offerSlide a:hover {
-  opacity: 0.7;
-}
-
-.offerSlide i {
-  position: absolute;
+.offerSlide a i {
   padding-left: 5px;
   color: #ea2f55;
-  opacity: 1;
-  cursor: pointer;
 }
 
 .tutorials-width {
@@ -3769,13 +3750,10 @@
 }
 
 .sliderOnline__slide a {
-  position: absolute;
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  background-color: #848484;
-  border: 1px solid #d2d2d2;
-  opacity: 0.3;
+  background-color: #141414;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3787,16 +3765,9 @@
           align-items: center;
 }
 
-.sliderOnline__slide a:hover {
-  opacity: 0.7;
-}
-
-.sliderOnline__slide i {
-  position: absolute;
+.sliderOnline__slide a i {
   padding-left: 5px;
   color: #ea2f55;
-  opacity: 1;
-  cursor: pointer;
 }
 
 .nav-mobile,
