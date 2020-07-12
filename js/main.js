@@ -146,3 +146,4 @@ $("#fl_inp").change(function(){
 $(".wishlist-items__book-close").click(function(){
   $(this).parent().hide();
 });
+

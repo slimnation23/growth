@@ -128,12 +128,12 @@
         <section id="book">
             <div class="book">
                 <div class="book-img">
-                    <div class="book-img__left">
+                    <div class="book-img__left slider-nav">
                         <img src="img/100-content.png" alt="content">
                         <img src="img/100-content.png" alt="content">
                         <img src="img/100-content.png" alt="content">
                     </div>
-                    <div class="book-img__right">
+                    <div class="book-img__right slider-for">
                         <img src="img/100-content.png" alt="content">
                     </div>
                 </div>
@@ -228,7 +228,7 @@
         
         <!-- history -->
 
-        <div class="my-container mb-5">
+        <div class="mb-5">
             <div class="comments">
                 <h2>Average user rating</h2>
                 <h1>4.3/5</h1>
@@ -253,102 +253,113 @@
 
                 <div class="upload-productLine"></div>
 
-                <div class="comments-comment">
-                    <div class="comments-comment__img">
-                        <img src="img/comment1.png" alt="comment1">
-                        <span>20 June 2020</span>
-                    </div>
-
-                    <div class="comments-comment__content">
-                        <div class="comments-comment__content-rang">
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                        </div>
-                        <h2>Will Smith</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type 
-                            specimen book.
-                        </p>
-                    </div>
-
+                <div class="info-line mt-0 review-line">
+                    <ul>
+                        <li class="info-line-a info-line-a__active" data-class=".all-reviews">All Reviews</li>
+                        <li class="info-line-a" data-class=".write-review">Write Review</li>
+                    </ul>
                 </div>
-                <!-- /.comments-comment -->
 
-                <div class="comments-comment">
-                    <div class="comments-comment__img">
-                        <img src="img/comment2.png" alt="comment1">
-                        <span>20 June 2020</span>
-                    </div>
-
-                    <div class="comments-comment__content">
-                        <div class="comments-comment__content-rang">
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
+                <div id="comments" class="all-reviews block block-active">
+                    <div class="comments-comment">
+                        <div class="comments-comment__img">
+                            <img src="img/comment1.png" alt="comment1">
+                            <span>20 June 2020</span>
                         </div>
-                        <h2>Jessica Watson</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type 
-                            specimen book.
-                        </p>
-                    </div>
 
-                </div>
-                <!-- /.comments-comment -->
-
-                <div class="comments-comment">
-                    <div class="comments-comment__img">
-                        <img src="img/comment3.png" alt="comment1">
-                        <span>20 June 2020</span>
-                    </div>
-
-                    <div class="comments-comment__content">
-                        <div class="comments-comment__content-rang">
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
-                            <i class="fas fa-star fa-lg"></i>
+                        <div class="comments-comment__content">
+                            <div class="comments-comment__content-rang">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                            </div>
+                            <h2>Will Smith</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                specimen book.
+                            </p>
                         </div>
-                        <h2>Hilery Will</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type 
-                            specimen book.
-                        </p>
-                    </div>
 
+                    </div>
+                    <!-- /.comments-comment -->
+
+                    <div class="comments-comment">
+                        <div class="comments-comment__img">
+                            <img src="img/comment2.png" alt="comment1">
+                            <span>20 June 2020</span>
+                        </div>
+
+                        <div class="comments-comment__content">
+                            <div class="comments-comment__content-rang">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                            </div>
+                            <h2>Jessica Watson</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                specimen book.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /.comments-comment -->
+
+                    <div class="comments-comment">
+                        <div class="comments-comment__img">
+                            <img src="img/comment3.png" alt="comment1">
+                            <span>20 June 2020</span>
+                        </div>
+
+                        <div class="comments-comment__content">
+                            <div class="comments-comment__content-rang">
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                                <i class="fas fa-star fa-lg"></i>
+                            </div>
+                            <h2>Hilery Will</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                specimen book.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /.comments-comment -->
                 </div>
-                <!-- /.comments-comment -->
 
                 <div class="upload-productLine"></div>
 
                 <div class="comments-h1">Write your valuable comment us</div>
 
-                <div class="upload-left mb-4">
-                    <div class="upload-left__group">
-                        <div class="col-xl-4 col-md-6 pl-0">
-                            <input type="text" placeholder="Name" class="w-100">
+                <div class="block write-review">
+                    <div class="upload-left mb-4">
+                        <div class="upload-left__group">
+                            <div class="col-xl-4 col-md-6 pl-0">
+                                <input type="text" placeholder="Name" class="w-100">
+                            </div>
+                            <div class="col-xl-4 col-md-6 pl-0">
+                                <input type="email" placeholder="Email Address" class="w-100">
+                            </div>
+                            <div class="col-xl-4 col-md-6 pl-0">
+                                <input type="number" placeholder="Mobile Number" class="w-100">
+                            </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 pl-0">
-                            <input type="email" placeholder="Email Address" class="w-100">
-                        </div>
-                        <div class="col-xl-4 col-md-6 pl-0">
-                            <input type="number" placeholder="Mobile Number" class="w-100">
-                        </div>
+                        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Drop your message here....."></textarea>
                     </div>
-                    <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Drop your message here....."></textarea>
-                </div>
 
-                <div class="comments-btn">
-                    <button>Submit</button>
+                    <div class="comments-btn">
+                        <button>Submit</button>
+                    </div>
                 </div>
                 
             <!-- comments -->
