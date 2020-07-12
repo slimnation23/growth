@@ -3242,7 +3242,7 @@
   color: #D2D2D2;
 }
 
-.descritpion-right button {
+.descritpion-right a {
   width: 100%;
   outline: none;
   cursor: pointer;
@@ -3253,10 +3253,15 @@
   font-size: 22px;
   color: #ffffff;
   font-weight: 500;
-}
-
-.descritpion-right button:hover {
-  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .comments h2 {
