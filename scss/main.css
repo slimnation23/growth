@@ -2454,7 +2454,7 @@
   opacity: 0.7;
 }
 
-.upload-left h1 {
+.upload-left h3 {
   font-size: 30px;
   color: #747474;
   margin-bottom: 20px;
@@ -2548,6 +2548,28 @@
 
 .upload-left__group input {
   width: 48%;
+}
+
+.upload-left__submit {
+  width: 100%;
+}
+
+.upload-left__submit a {
+  outline: none;
+  cursor: pointer;
+  background-color: #EA2F55;
+  color: #ffffff;
+  font-size: 22px;
+  border: none;
+  border-radius: 50px;
+  min-height: 60px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .upload-right__group {
@@ -2736,6 +2758,22 @@
   }
 }
 
+@media (max-width: 600px) {
+  .upload-left {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .upload-left__group input {
+    width: 100%;
+  }
+  .upload-left__submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media (max-width: 575px) {
   .upload-right__group {
     text-align: center;
@@ -2887,7 +2925,14 @@
   color: #D2D2D2;
 }
 
-.rightBlock h1 {
+.rightBlock_h1mob {
+  display: none;
+  line-height: 1;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.rightBlock h3 {
   line-height: 1;
   font-size: 30px;
   margin-bottom: 30px;
@@ -2987,7 +3032,7 @@
   font-size: 24px;
 }
 
-.rightBlock button {
+.rightBlock a {
   outline: none;
   cursor: pointer;
   width: 100%;
@@ -2997,9 +3042,18 @@
   border: none;
   border-radius: 5px;
   min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.rightBlock button:hover {
+.rightBlock a:hover {
   opacity: 0.7;
 }
 
@@ -3011,11 +3065,39 @@
   margin-top: 0px !important;
 }
 
+.cart-none {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  .cart-none {
+    display: block;
+  }
+  .rightBlock-line,
+  .upload-left__line,
+  .upload-left h3,
+  .rightBlock h3,
+  .submit-none {
+    display: none;
+  }
   .leftBlock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .rightBlock {
+    background-color: transparent;
+    padding: 0;
+  }
+  .rightBlock a {
+    border-radius: 50px;
+  }
+  .rightBlock-text__content p,
+  .rightBlock-text__content span {
+    color: #747474;
+  }
+  .rightBlock h2 {
+    font-size: 18px;
   }
 }
 
@@ -3821,6 +3903,18 @@
 }
 
 @media (max-width: 600px) {
+  .rightBlock_h1mob {
+    display: block !important;
+  }
+  .rightBlock h1 {
+    display: none;
+  }
+  .summary-block {
+    display: block !important;
+  }
+  #paypal {
+    display: none;
+  }
   .spcOff {
     display: none !important;
   }
@@ -3972,6 +4066,38 @@
   .wishlist-items__book-info__price-author p span {
     font-size: 9px;
     color: #ea2f55;
+  }
+  .wishlist-items button {
+    width: 100%;
+    background-color: #ea2f55;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    min-height: 45px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .wishlist-items__continue {
+    color: #ea2f55;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .wishlist-items__amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .wishlist-items__amount span {
+    color: #D2D2D2;
+    font-size: 18px;
+    font-weight: 500;
   }
   .history-slider {
     -webkit-box-pack: center;

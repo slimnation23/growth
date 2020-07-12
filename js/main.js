@@ -147,3 +147,12 @@ $(".wishlist-items__book-close").click(function(){
   $(this).parent().hide();
 });
 
+$(".hideBlock").click(function(){
+  $(this).parent().hide();
+});
+
+$('#check').click(function() {
+  $('#paypal').fadeIn();
+  $('#cart').hide();
+  $('#profile').hide();
+});
