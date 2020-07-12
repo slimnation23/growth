@@ -244,6 +244,7 @@
 
 .whats-hot__sliderBlock {
     display: flex;
+    outline: none;
     flex-direction: column;
     margin-bottom: 15px;
     margin-right: 14px;
@@ -405,7 +406,29 @@
     height: 213px !important;
 }
 
+.nav-menu__left a {
+    display: none;
+}
+
+.spcOff {
+    display: flex;
+}
+
+.spesOff {
+    display: none;
+}
+
 @media (max-width: 600px) {
+    .spcOff {
+        display: none !important;
+    }
+    .spesOff {
+        display: flex;
+        padding-top: 15px;
+    }
+    .nav-menu__left a {
+        display: block;
+    }
     .comments-btn button {
         border-radius: 50px;
         width: 100%;
