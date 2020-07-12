@@ -229,7 +229,7 @@
                 align-items: center;
                 position: absolute;
                 top: -15px;
-                left: 49%;
+                left: 47%;
                 text-transform: uppercase;
             }
         }
@@ -237,6 +237,7 @@
         &__button {
             display: flex;
             justify-content: center;
+            margin-top: 35px;
 
             button {
                 display: flex;
