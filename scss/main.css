@@ -3821,6 +3821,15 @@
           flex-direction: column;
 }
 
+.book-slide {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.book-slider {
+  height: 213px !important;
+}
+
 @media (max-width: 600px) {
   .comments-btn button {
     border-radius: 50px;
@@ -4214,6 +4223,28 @@
     line-height: 19px;
     color: #747474;
   }
+  .book-priceVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-priceVideo a button {
+    width: 100%;
+    height: 34px;
+    border-radius: 17px;
+    -webkit-filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ea2f55;
+    border: 1px solid #ea2f55;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
   .book-price {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4224,6 +4255,22 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 20px;
+  }
+  .book-price__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .book-price__video h2 {
+    font-size: 25px;
+    color: #D2D2D2;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .book-price__video span {
+    font-size: 20px;
+    color: #747474;
   }
   .book-price__purchase {
     display: -webkit-box;
