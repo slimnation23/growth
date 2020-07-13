@@ -81,6 +81,7 @@ $("#whats-hot__offers").slick({
   speed: 300,
   slidesToShow: 1,
   arrows: false,
+  variableWidth: true,
 });
 
 $("#whats-hot__tutorials").slick({

@@ -619,7 +619,7 @@
 }
 
 .nav-menu__left img {
-  margin-right: 160px;
+  margin-right: 30px;
 }
 
 .nav-menu__left-search {
@@ -3658,7 +3658,6 @@
 }
 
 .whats-hot__slider,
-.whats-hot__h2,
 .whats-hot__mobile {
   display: none;
 }
