@@ -1706,8 +1706,16 @@
   position: relative;
 }
 
-.viewLine button {
-  display: block;
+.viewLine a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   left: 50%;
   top: -28px;
@@ -1720,16 +1728,13 @@
           filter: drop-shadow(-9.192px 9.192px 3.5px rgba(0, 0, 0, 0.27));
   border: 2px solid #ea2f55;
   background-color: #141414;
-}
-
-.viewLine button a {
   font-size: 22px;
   color: #ea2f55;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
-.viewLine button a:hover {
+.viewLine a:hover {
   opacity: 0.7;
 }
 
