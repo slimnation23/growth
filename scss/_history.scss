@@ -15,7 +15,7 @@
 .view img {
     display: block;
     position: relative;
-    max-width: 100%;
+    width: 100%;
 }
 
 .view-second img {
@@ -319,6 +319,7 @@
             height: 98px;
             border-radius: 50%;
             background: #141414;
+            opacity: 0.7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -698,9 +699,8 @@
         display: block;
         height: 10px;
         background-color: #ea2f55;
-        width: 150%;
+        width: 100%;
         bottom: -25px;
-        left: -25%;
     }
 }
 

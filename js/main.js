@@ -106,6 +106,7 @@ $("#history-slider").slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  variableWidth: true,
   appendArrows: $('.history-video__controls'),
   prevArrow: '<a href="#"><i class="fas fa-arrow-left fa-2x"></i></a>',
   nextArrow: '<a href="#"><i class="fas fa-arrow-right fa-2x"></i></a>',
