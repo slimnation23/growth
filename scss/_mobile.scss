@@ -868,17 +868,18 @@
                 }
 
                 a {
-                    button {
-                        width: 141px;
-                        height: 34px;
-                        border-radius: 17px;
-                        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
-                        background-color: #ea2f55;
-                        border: 1px solid #ea2f55;
-                        font-size: 16px;
-                        outline: none;
-                        color: #ffffff;
-                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 141px;
+                    height: 34px;
+                    border-radius: 17px;
+                    filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+                    background-color: #ea2f55;
+                    border: 1px solid #ea2f55;
+                    font-size: 16px;
+                    outline: none;
+                    color: #ffffff;
                 }
             }
 
@@ -901,17 +902,18 @@
                 }
 
                 a {
-                    button {
-                        width: 141px;
-                        height: 34px;
-                        border-radius: 17px;
-                        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
-                        background-color: transparent;
-                        border: 1px solid #ea2f55;
-                        font-size: 16px;
-                        outline: none;
-                        color: #ea2f55;
-                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 141px;
+                    height: 34px;
+                    border-radius: 17px;
+                    filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+                    background-color: transparent;
+                    border: 1px solid #ea2f55;
+                    font-size: 16px;
+                    outline: none;
+                    color: #ea2f55;
                 }
             }
         }
