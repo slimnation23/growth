@@ -1,7 +1,13 @@
 .upload-left {
+    height: 100%;
+    border: 2px solid #414141;
+    border-radius: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     textarea {
         width: 100%;
-        outline: none;
+        ;
         padding-top: 10px;
         font-size: 15px;
         padding-left: 24px;
@@ -10,24 +16,28 @@
         margin-bottom: 23px;
         border-radius: 28px;
         background-color: #262626;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
         border: 2px solid #474747;
+
         &:hover {
             opacity: 0.7;
         }
     }
+
     h3 {
         font-size: 30px;
         color: #747474;
         margin-bottom: 20px;
         margin-top: 34px;
     }
+
     &__line {
         width: 100%;
         background-color: #6a6a6a;
         height: 2px;
         margin-bottom: 42px;
     }
+
     &__file {
         width: 203px;
         text-align: center;
@@ -40,25 +50,31 @@
         flex-direction: column;
         font-size: 22px;
         color: #747474;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
         border: 2px solid #474747;
         margin-bottom: 23px;
+
         &:hover {
             opacity: 0.7;
         }
+
         div {
             font-size: 1rem;
         }
+
         label {
-            cursor:pointer;
+            cursor: pointer;
+
             img {
                 max-width: 100%;
             }
         }
     }
+
     #fl_inp {
-        display:none;
+        display: none;
     }
+
     input {
         width: 100%;
         outline: none;
@@ -70,23 +86,28 @@
         margin-bottom: 23px;
         border-radius: 28px;
         background-color: #262626;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
         border: 2px solid #474747;
+
         &:hover {
             opacity: 0.7;
         }
     }
+
     &__group {
         display: flex;
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+
         input {
             width: 48%;
         }
     }
+
     &__submit {
         width: 100%;
+
         a {
             outline: none;
             cursor: pointer;
@@ -111,6 +132,7 @@
         flex-wrap: wrap;
         margin-bottom: 26px;
         width: 100%;
+
         input {
             outline: none;
             width: 100%;
@@ -121,12 +143,14 @@
             color: #747474;
             border-radius: 28px;
             background-color: #262626;
-            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
             border: 2px solid #474747;
+
             &:hover {
                 opacity: 0.7;
             }
         }
+
         &-btn {
             display: flex;
             justify-content: center;
@@ -135,13 +159,15 @@
             height: 49px;
             font-size: 15px;
             color: #747474;
-            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
             background-color: #305DA8;
             color: #ffffff;
+
             &:hover {
                 opacity: 0.7;
             }
         }
+
         button {
             outline: none;
             cursor: pointer;
@@ -150,15 +176,18 @@
             border-radius: 50%;
             border: 2px solid #EA2F55;
             background-color: transparent;
+
             &:hover {
                 opacity: 0.7;
             }
+
             i {
                 color: #EA2F55;
                 vertical-align: middle;
             }
         }
     }
+
     textarea {
         width: 100%;
         outline: none;
@@ -170,13 +199,15 @@
         margin-bottom: 23px;
         border-radius: 28px;
         background-color: #262626;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
         border: 2px solid #474747;
         margin-left: 15px;
+
         &:hover {
             opacity: 0.7;
         }
     }
+
     &__input {
         width: 100%;
         outline: none;
@@ -188,12 +219,13 @@
         margin-bottom: 23px;
         border-radius: 28px;
         background-color: #262626;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
         border: 2px solid #474747;
         margin-left: 15px;
+
         &:hover {
-                opacity: 0.7;
-            }
+            opacity: 0.7;
+        }
     }
 }
 
@@ -216,6 +248,7 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 70px;
+
     button {
         outline: none;
         cursor: pointer;
@@ -226,7 +259,8 @@
         min-width: 266px;
         height: 49px;
         border-radius: 10px;
-        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+
         &:hover {
             opacity: 0.7;
         }
@@ -238,17 +272,20 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
     .upload-right textarea,
     .upload-right__input {
         width: 97%;
     }
 }
 
-@media (max-width: 830px)  {
+@media (max-width: 830px) {
+
     .upload-right textarea,
     .upload-right__input {
         width: 96%;
     }
+
     .upload-btn {
         justify-content: center;
     }
@@ -257,26 +294,33 @@
 @media (max-width: 600px) {
     .upload-left {
         align-items: flex-start !important;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
     }
+
     .upload-left__group input {
         width: 100%;
     }
+
     .upload-left__submit {
         display: flex;
     }
-}
 
-@media (max-width: 575px)  {
-    .upload-right__group {
-        text-align: center;
-    }
-    .upload-right__group input,
-    .upload-right__group-btn,
-    .upload-right__group button {
-        margin-bottom: 10px;
-    }
-    .upload-right textarea,
-    .upload-right__input {
-        width: 94%;
+    @media (max-width: 575px) {
+        .upload-right__group {
+            text-align: center;
+        }
+
+        .upload-right__group input,
+        .upload-right__group-btn,
+        .upload-right__group button {
+            margin-bottom: 10px;
+        }
+
+        .upload-right textarea,
+        .upload-right__input {
+            width: 94%;
+        }
     }
 }
