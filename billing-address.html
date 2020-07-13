@@ -18,6 +18,7 @@
 <body>
     <div class="nav-menu">
         <div class="nav-menu__left">
+            <a href="cart.html" class="nav-menu__left-back"><i class="fas fa-arrow-left fa-lg"></i></a>
             <img src="img/logo.png" alt="logo">
             <div class="nav-menu__left-search">
                 <input type="text" placeholder="Search">
@@ -26,7 +27,7 @@
         </div>
         <!-- /.nav-menu__left -->
         <div class="nav-menu__right">
-            <ul id="menu">
+            <ul>
                 <li class="nav-menu__right-chart"><a href="#"><img src="img/chart.png" alt="chart"></a></li>
                 <li class="nav-menu__right-alert"><a href="#"><img src="img/alert.png" alt="alert"></a></li>
                 <li class="nav-menu__right-down" id="dropdown-btn">
@@ -41,16 +42,12 @@
                 </li>
             </ul>
 
-            <button id="menu-btn">
-                <img src="img/menu-btn.png" alt="menu-btn">
-            </button>
-
         </div>
         <!-- /.nav-menu__right -->
     </div>
     <!-- /.nav-menu -->
 
-    <div class="history padding-bottom">
+    <div class="history padding-bottom desctop-content">
         <div class="invite pt-5">
             <div class="history-card__content invite-first">
                 <div class="history-card__content__shortLine w-50"></div>
@@ -67,33 +64,58 @@
         <div class="history-slider row block block-regular block-active">
             <div class="row ml-0 justify-content-between w-100 mb-5">
                 <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-                    <form action="#">
-                        <div class="upload-left">
-                            <h1>Billing Details</h1>
-                            <div class="upload-left__line"></div>
-                            <div class="upload-left__group">
-                                <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Last Name">
-                            </div>
-                            <div class="upload-left__group">
-                                <input type="email" placeholder="Email Address">
-                                <input type="number" placeholder="Phone Number">
-                            </div>
+                    <div class="upload-left">
 
-                            <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Street"></textarea>
-
-                            <div class="upload-left__group">
-                                <input type="text" placeholder="City">
-                                <input type="text" placeholder="Country">
+                        <div class="upload-mobile">
+                            <div class="mobile-content">
+                                <div class="profile pl-0 pr-0 pb-0" id="profile">
+                                    <h1>Billing Address</h1>
+                                </div>
                             </div>
-                            
+                            <!-- /.mobile-content -->
                         </div>
-                    </form>
+                        <!-- /.my-container -->
+
+                        <h3>Billing Details</h3>
+                        <div class="upload-left__line"></div>
+                        <div class="upload-left__group">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="upload-left__group">
+                            <input type="email" placeholder="Email Address">
+                            <input type="number" placeholder="Phone Number">
+                        </div>
+
+                        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Street"></textarea>
+
+                        <div class="upload-left__group">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="Country">
+                        </div>
+
+                        <div class="upload-left__submit">
+                            <a href="homePage.html">Submit</a>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                 <!-- col -->
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="rightBlock">
-                        <h1>Summary</h1>
+
+                        <div class="upload-mobile">
+                            <div class="mobile-content">
+                                <div class="profile pl-0 pr-0 pb-0" id="profile">
+                                    <h1 class="summary-block">Order Summary</h1>
+                                </div>
+                            </div>
+                            <!-- /.mobile-content -->
+                        </div>
+                        <!-- /.my-container -->
+
+                        <h3>Summary</h3>
                         <div class="rightBlock-line"></div>
                         <div class="rightBlock-text billing-padding">
                             <div class="rightBlock-text__content">
@@ -128,7 +150,7 @@
                                 <p>$40.00</p>
                             </div>
                         </div>
-                        <button>Proceed to checkout</button>
+                        <a href="homePage.html" class="submit-none">Submit</button>
                     </div>
                 </div>
                 <!-- col -->

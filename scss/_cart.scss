@@ -96,7 +96,13 @@
     border-radius: 10px;
     padding: 40px 30px 30px 30px;
     color: #D2D2D2;
-    h1 {
+    &_h1mob {
+        display: none;
+        line-height: 1;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    h3 {
         line-height: 1;
         font-size: 30px;
         margin-bottom: 30px;
@@ -162,7 +168,7 @@
             }
         }
     }
-    button {
+    a {
         outline: none;
         cursor: pointer;
         width: 100%;
@@ -172,6 +178,9 @@
         border: none;
         border-radius: 5px;
         min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
             opacity: 0.7;
         }
@@ -185,9 +194,36 @@
 .billing-paddingTop {
     margin-top: 0px !important;
 }
+.cart-none {
+    display: none;
+}
 
 @media (max-width: 600px) {
+    .cart-none {
+        display: block;
+    }
+    .rightBlock-line,
+    .upload-left__line,
+    .upload-left h3,
+    .rightBlock h3,
+    .submit-none {
+        display: none;
+    }
     .leftBlock {
         justify-content: center;
+    }
+    .rightBlock {
+        background-color: transparent;
+        padding: 0;
+    }
+    .rightBlock a {
+        border-radius: 50px;
+    }
+    .rightBlock-text__content p,
+    .rightBlock-text__content span {
+        color: #747474;
+    }
+    .rightBlock h2 {
+        font-size: 18px;
     }
 }
