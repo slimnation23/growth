@@ -1377,6 +1377,7 @@
 
 #dropdown-menu.drop-active li a {
   color: #ffffff;
+  font-size: 14px;
 }
 
 #dropdown-menu.drop-active li a:hover {
