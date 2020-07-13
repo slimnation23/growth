@@ -84,14 +84,6 @@ $("#whats-hot__offers").slick({
   variableWidth: true,
 });
 
-$("#whats-hot__offers2").slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  arrows: false,
-  variableWidth: true,
-});
-
 $("#whats-hot__tutorials").slick({
   infinite: true,
   speed: 300,

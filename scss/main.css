@@ -2383,6 +2383,12 @@
 }
 
 @media (max-width: 600px) {
+  .history-card__text {
+    width: 50%;
+    font-size: 8px;
+    height: 16px;
+    top: -6px;
+  }
   .purchase ul,
   .info-line ul {
     width: 100%;
