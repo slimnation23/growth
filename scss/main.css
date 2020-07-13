@@ -1499,7 +1499,7 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 90px;
+  padding-top: 40px;
   padding-bottom: 120px;
   margin-left: 15%;
   margin-right: 15%;
@@ -2444,6 +2444,12 @@
   }
 }
 
+.noBorder {
+  border: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .upload-left {
   height: 100%;
   border: 2px solid #414141;
@@ -3232,6 +3238,7 @@
   font-size: 44px;
   color: #d2d2d2;
   line-height: 1;
+  margin-left: 20px;
 }
 
 .price-block__a a button {
@@ -3302,6 +3309,29 @@
 .descritpion-right__rang span {
   font-size: 20px;
   color: #747474;
+}
+
+.descritpion-right__add a {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+  background-color: #ea2f55;
+  border: 1px solid #ea2f55;
+  font-size: 22px;
+  outline: none;
+  margin-right: 40px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .comments h2 {

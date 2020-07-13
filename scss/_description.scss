@@ -82,6 +82,7 @@
             font-size: 44px;
             color: #d2d2d2;
             line-height: 1;
+            margin-left: 20px;
         }
 
         &__a {
@@ -146,6 +147,24 @@
         span {
             font-size: 20px;
             color: #747474;
+        }
+    }
+
+    &__add {
+        a {
+            width: 100%;
+            height: 60px;
+            border-radius: 5px;
+            filter: drop-shadow(-2.924px 9.563px 3.5px rgba(0, 0, 0, 0.16));
+            background-color: #ea2f55;
+            border: 1px solid #ea2f55;
+            font-size: 22px;
+            outline: none;
+            margin-right: 40px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
